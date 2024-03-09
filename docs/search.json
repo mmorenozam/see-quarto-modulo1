@@ -1,0 +1,562 @@
+[
+  {
+    "objectID": "index.html#acerca-del-curso",
+    "href": "index.html#acerca-del-curso",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Acerca del curso",
+    "text": "Acerca del curso\n\n\nObjetivos de aprendizaje:\n\nRealizar operaciones básicas en R, tales como: cargar, modificar, limpiar y guardar tablas de datos.\nRealizar gráficos de manera profesional usando R.\nLlevar a cabo análisis exploratorio de datos.\nLlevar a cabo, interpretar y reportar los resultados de metodologías estadísticas tales como: pruebas t, pruebas no paramétricas y análisis de varianza.\nCrear reportes en formatos docx, pptx, pdf y html usando Quarto y R.\nEscribir documentos académicos (por ejemplo una tesis de grado) usando Quarto.\nEntender la factibilidad de crear páginas web en combinación de Quarto y GitHub.\n\nPre-requisitos\n\nComputador con mínimo 2 GB de RAM y procesador de 64 bits.\nConexión estable a internet\nRecomendado: sistema operativo Windows 10/11"
+  },
+  {
+    "objectID": "index.html#generalidades",
+    "href": "index.html#generalidades",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Generalidades",
+    "text": "Generalidades\n\n\nEstructura del curso\n\n4 sesiones de 5 horas cada una. Días Sábados 16, 23 de Marzo, 6 y 13 de Abril\n8H30 a 13H30 (Dos recesos de 10 minutos cada uno)\n\nCanales de comunicación:\n\nEmail: mmorenozambrano@protonmail.com\n\nTarea final de curso:\n\n40% entrega de autoevaluaciones resueltas (con código en caso de resolución de ejercicios).\n60% reporte con aplicación de conocimientos adquiridos sobre una base de datos propia o propuesta durante el curso.\nMínima nota de aprobación: 70%"
+  },
+  {
+    "objectID": "index.html#generalidades-1",
+    "href": "index.html#generalidades-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Generalidades",
+    "text": "Generalidades\n\n\nMateriales:\n\nLas tablas de datos que usaremos son de acceso abierto. En su mayoría, provenientes de paquetes o librerías de R.\nUn listado comprensivo de los materiales por módulo se encuentra detallado en la página web del curso.\n\nRecursos complementarios:\n\nHe creado el contenido del curso a partir de varios recursos libremente disponibles en el internet (mayoritariamente de fuentes en Inglés).\nAl igual que los materiales, los recursos complementarios se encuentran detallados en la página web del curso."
+  },
+  {
+    "objectID": "index.html#una-breve-historia-de-r",
+    "href": "index.html#una-breve-historia-de-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Una breve historia de R",
+    "text": "Una breve historia de R\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n1991: Robert Gentleman y Ross Ihaka (Universidad de Auckland, NZ) empiezan a desarrollar R\n1995: R se convierte en un proyecto open-source\n1997: Se establecen el Comprehensive R Archive Network (CRAN) y el R core group\n2000: Lanzamiento de R versión 1.0.0\n2003: Se establece la R Foundation\n2004: Se lleva a cabo la primera conferencia UseR! en Viena, Austria\n2006: Se edita el primer número del R Journal\n2011: Lanzamiento de RStudio versión beta\n2016: Lanzamiento de RStudio versión 1.0.0\n2017: CRAN alcanza más de 10000 paquetes públicos"
+  },
+  {
+    "objectID": "index.html#por-qué-r",
+    "href": "index.html#por-qué-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "¿Por qué R?",
+    "text": "¿Por qué R?\n\n\n\n\n\n \n\n\n\n\n\n\n\nUso de R comparado con SAS, SPSS y JMP en Ecología (Tomado de Touchon y McCoy (2016), Ecosphere 7 (8))\n\n\n\n\n\n\n\n\nSu uso se va extendiendo cada vez más en el ámbito académico (e industrial).\nSoftware libre.\nAmplio abanico de paquetes/librerías (20554 al 09.03.2024).\n¡Basta comunidad de R enthusiasts!.\nVersátil:\n\nGráficos listos para publicación.\nGeneración de reportes, páginas web, presentaciones y libros en distintos formatos (rmarkdown, blogdown, quarto).\nConstrucción de aplicaciones interactivas para visualización/análisis de datos (rshiny).\n\nA continuación, algunos ejemplos de la versatilidad de R."
+  },
+  {
+    "objectID": "index.html#gráficos-listos-para-publicación",
+    "href": "index.html#gráficos-listos-para-publicación",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Gráficos listos para publicación",
+    "text": "Gráficos listos para publicación\n\n\nMoreno-Zambrano, et al. (2022), R. S. O. Sci. 9(2)"
+  },
+  {
+    "objectID": "index.html#gráficos-listos-para-publicación-1",
+    "href": "index.html#gráficos-listos-para-publicación-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Gráficos listos para publicación",
+    "text": "Gráficos listos para publicación\n\n\nMoreno-Zambrano, et al. (2018) No publicado"
+  },
+  {
+    "objectID": "index.html#gráficos-listos-para-publicación-2",
+    "href": "index.html#gráficos-listos-para-publicación-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Gráficos listos para publicación",
+    "text": "Gráficos listos para publicación\n\n\nGráfica propia, @psignificant"
+  },
+  {
+    "objectID": "index.html#animaciones",
+    "href": "index.html#animaciones",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Animaciones",
+    "text": "Animaciones\n\n\nGráfica para, @BIOscience_N"
+  },
+  {
+    "objectID": "index.html#animaciones-1",
+    "href": "index.html#animaciones-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Animaciones",
+    "text": "Animaciones\n\n\nGráfica creada por Michael Harper, tomado de Animated Plots with R"
+  },
+  {
+    "objectID": "index.html#animaciones-2",
+    "href": "index.html#animaciones-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Animaciones",
+    "text": "Animaciones\n\n\nGráfica creada por David Smith, tomada de Global Migration Animated with R"
+  },
+  {
+    "objectID": "index.html#páginas-web",
+    "href": "index.html#páginas-web",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Páginas web",
+    "text": "Páginas web\n\n\nPágina web personal"
+  },
+  {
+    "objectID": "index.html#reportes",
+    "href": "index.html#reportes",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Reportes",
+    "text": "Reportes\n\n\n\n\n\n\nNotebook para StanCon 2019 (Cambridge, UK)"
+  },
+  {
+    "objectID": "index.html#apps-interactivas-shiny-apps",
+    "href": "index.html#apps-interactivas-shiny-apps",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Apps interactivas (Shiny Apps)",
+    "text": "Apps interactivas (Shiny Apps)\n\n\nShiny App del ICGC Data portal para visualizar el genoma de pacientes con cáncer pancreático"
+  },
+  {
+    "objectID": "index.html#instalación-de-r",
+    "href": "index.html#instalación-de-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Instalación de R",
+    "text": "Instalación de R\n\n\n\nIngresa a https://cran.r-project.org/bin/windows/base/\nDescarga la última versión disponible de R\nEjecuta el archivo .exe para iniciar la instalación\n\nRecomendado: No cambies el directorio sugerido por el asistente de instalación\nOpcional: No instalar traducciones de los mensajes de R"
+  },
+  {
+    "objectID": "index.html#instalación-de-rstudio",
+    "href": "index.html#instalación-de-rstudio",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Instalación de RStudio",
+    "text": "Instalación de RStudio\n\n\nIngresa a https://posit.co/download/rstudio-desktop/#download\nClick en la opción de instalar “RStudio Desktop for Windows”\nEjecuta el archivo .exe para iniciar la instalación\n\nNo cambies las sugerencias pre-establecidas para la instalación\nEn el caso de tener una versión de R anterior a la previamente instalada, es probable que la primera vez que abramos RStudio, este nos pregunte que version queremos usar (recomendado usar la última versión de R)"
+  },
+  {
+    "objectID": "index.html#instalación-de-rtools-opcional",
+    "href": "index.html#instalación-de-rtools-opcional",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Instalación de Rtools (opcional)",
+    "text": "Instalación de Rtools (opcional)\n\n\n\nRtools es una cadena de herramientas para compilar librerías de R en Windows basada en lenguajes C/C++/Fortran.\nNo es necesario en sistemas operativos de Apple o basados en Unix (Linux).\nSe puede usar R en Windows sin necesidad de Rtools por la existencia de versiones de librerías en formato binario (ya previamente compiladas).\nLas ventajas de contar con Rtools:\n\nPosibilidad de actualizar librerías a sus mas recientes versiones.\nCompilación de versiones beta de librerías experimentales aun no disponibles en CRAN.\nUso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. rstan)\n\nEn caso de que desees instalar Rtools, sigue las instrucciones en este link https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html"
+  },
+  {
+    "objectID": "index.html#gui-rstudio",
+    "href": "index.html#gui-rstudio",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "GUI RStudio",
+    "text": "GUI RStudio"
+  },
+  {
+    "objectID": "index.html#gui-rstudio-1",
+    "href": "index.html#gui-rstudio-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "GUI RStudio",
+    "text": "GUI RStudio\n\nEditor: ventana donde escribimos código. Puede contener tantas pestañas como scripts de R tengamos abiertos. No se ejecuta a no ser que ordenemos a R hacerlo.\nAmbiente/historia de trabajo: nos permite visualizar los objetos que vayamos creando durante la ejecución del código así como el orden de los comandos ejecutados.\nConsola: o terminal de R, es la interface directa de RStudio con R. En esta podemos ejecutar comandos línea por línea y visualizar los resultados de la ejecución de lo que escribamos en el editor.\nVarias pestañas de importancia:\n\nPlots: donde se producirán los plots que ejecutemos\nPackages: listado de librerías instaladas\nHelp: ayuda de R (activada por comando o búsqueda manual)\nViewer: crea una ventana fuera del ambiente de RStudio para visualizar gráficos"
+  },
+  {
+    "objectID": "index.html#generalidades-del-lenguaje-r",
+    "href": "index.html#generalidades-del-lenguaje-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Generalidades del lenguaje R",
+    "text": "Generalidades del lenguaje R\n\n\nComo otros lenguajes de programación, R es sensible a letras mayúsculas y minúsculas (Tabla ≠ tabla).\nA diferencia de Python por ejemplo, R no es sensible a la indentación.\n\n\n\n\nfor (i in 1:20){\n  x = 0 + i\n  print(x)\n}\n\n\n\n\nfor (i in 1:20){\nx = 0 + i\nprint(x)\n}\n\n\n\n\nPara asignar contenido (valores o elementos) a un objeto, los operadores de R son &lt;-, = o -&gt;\n\n\n\n\nx = 0\ny &lt;- 0\n0 -&gt; z\n\n\n\n\nNo existe una reglamentación de tipo alguno, pero encontrarán que el operador &lt;- es el más usado.\n\n\n\n\nR no reconoce nombres de objetos que comiencen con números.\n\n\n\n\n1variable &lt;- 2"
+  },
+  {
+    "objectID": "index.html#generalidades-del-lenguaje-r-1",
+    "href": "index.html#generalidades-del-lenguaje-r-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Generalidades del lenguaje R",
+    "text": "Generalidades del lenguaje R\n\n\nAl importar tablas, R asigna el valor de la primera fila de cada columna como su nombre.\nEn el caso de que el nombre de la columna empiece con un número, R asigna caracteres para evitar errores. Ejemplo: si en un archivo de Excel tenemos por nombre de columna 1glucosa, R lo importa como X.1glucosa\nEl nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como _ o - cuando deseemos contar con espacios en nuestros archivos a importar.\nDentro del ambiente de R, es aconsejable evitar espacios vacíos (se los puede usar, pero igualmente, se requiere de sintaxis especial para referirnos a esos objetos).\n\n\n\n\nuna variable &lt;- 2\n`una variable` &lt;- 2\n\n\n\n\nR tiene nombres de funciones y objetos predeterminados. Por ejemplo, elementos que representan respuestas lógicas son representados con las letras T y F.\n\n\n\n\nPor tanto, es aconsejable el evitar asignar nombres a nuestros objetos que puedan entrar en conflicto con otras funciones u objetos de R."
+  },
+  {
+    "objectID": "index.html#tipos-de-datos",
+    "href": "index.html#tipos-de-datos",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tipos de datos",
+    "text": "Tipos de datos\n\n\nLos tipos de datos que R es capaz de manejar son diversos. Los más comunes son:\n\nNuméricos, tanto enteros como reales (num: 1, 3.14)\nCaractéres (chr: \"a\", \"estadistica\")\nFactores (Factor: pueden ser letras o números)\nLógicos (logi: True, False o también T y F)\nFechas (Date: \"1985-10-14\")"
+  },
+  {
+    "objectID": "index.html#operadores-básicos",
+    "href": "index.html#operadores-básicos",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Operadores básicos",
+    "text": "Operadores básicos\n\n\n\nOperación\nOperador\nEjemplo\nResultado\n\n\n\n\nSuma\n+\n10 + 2\n12\n\n\nResta\n-\n6 - 3\n3\n\n\nMultiplicación\n*\n4 * 4\n16\n\n\nDivisión\n/\n12 / 3\n4\n\n\nPotencia\n^\n5 ^ 2\n25\n\n\n\n\nExisten otros operadores, como el de “cascada” (pipeline operator) %&gt;%, que usaremos más adelante"
+  },
+  {
+    "objectID": "index.html#operadores-booleanos-de-comparación",
+    "href": "index.html#operadores-booleanos-de-comparación",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Operadores Booleanos de comparación",
+    "text": "Operadores Booleanos de comparación\n\n\n\nOperación\nOperador\nEjemplo\nResultado\n\n\n\n\nMayor que\n&gt;\n5 &gt; 1\nT\n\n\nMenor que\n&lt;\n12 &lt; 11\nF\n\n\nIgual que\n==\n33 == 33\nT\n\n\nNo igual que\n!=\n10 != 10\nF\n\n\nMayor o igual que\n&gt;=\n5 &gt;= 5\nT\n\n\nMenor o igual que\n&lt;=\n4 &lt;= 2\nF"
+  },
+  {
+    "objectID": "index.html#operadores-booleanos-lógicos",
+    "href": "index.html#operadores-booleanos-lógicos",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Operadores Booleanos lógicos",
+    "text": "Operadores Booleanos lógicos\n\n\n\nOperación\nOperador\nEjemplo\nResultado\n\n\n\n\nNo\n!\n!(1==1)\nF\n\n\nO\n|\n(1==1) | (2==3)\nT\n\n\nY\n&\n(1==1) | (2==3)\nF"
+  },
+  {
+    "objectID": "index.html#tipos-de-objetos-en-r",
+    "href": "index.html#tipos-de-objetos-en-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tipos de objetos en R",
+    "text": "Tipos de objetos en R\n\n\nEn R, los objetos son distintas formas de almacenar datos/información.\nExisten varios tipos de objetos en R, los más fundamentales:\n\nEscalares\nVectores\nTablas de datos\nMatrices\nListas\n\nTendemos a referirnos a los escalares y vectores comúnmente como variables."
+  },
+  {
+    "objectID": "index.html#escalares",
+    "href": "index.html#escalares",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Escalares",
+    "text": "Escalares\n\n\nSon los objetos más sencillos ya que consisten de un solo elemento.\nSon la base para la creación de objetos más complejos.\n\n\n\n\nescalar_1 &lt;- 100                # número\nescalar_2 &lt;- \"cien\"             # caracter\nescalar_3 &lt;- T                  # lógico\nescalar_4 &lt;- \"2000-01-01\"       # fecha?\nescalar_5 &lt;- \"A\"                # caracter o factor?\n\n\n\n\nR no reconoce una fecha o un factor sin que se lo especifiquemos. Ya veremos más adelante como hacerlo."
+  },
+  {
+    "objectID": "index.html#vectores",
+    "href": "index.html#vectores",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Vectores",
+    "text": "Vectores\n\n\nSon contenedores unidimensionales de dos o más elementos, necesariamente del mismo tipo.\nPara crear un vector, usamos la sintaxis c(), donde los elementos del vector irán dentro del paréntesis:\n\n\n\n\nvector_1 &lt;- c(1, 2, 3)                \nvector_2 &lt;- c(\"uno\", \"dos\", \"tres\")\nvector_3 &lt;- c(T, F, T, F)\nvector_4 &lt;- c(1, \"dos\", 3)\n\n\n\n\n¿Qué pasa con el vector_4?: cuando escalares de distinto tipo son asignados como elementos de un vector, R transforma todos los elementos a un mismo tipo."
+  },
+  {
+    "objectID": "index.html#tablas-de-datos",
+    "href": "index.html#tablas-de-datos",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de datos",
+    "text": "Tablas de datos\n\n\nSon contenedores bidimensionales que nos permiten almacenar datos de distintos tipos en filas y columnas.\nExisten varias formas de crear una tabla en R:\n\nDe manera manual (y quizá la más impráctica) usando la función data.frame:\n\n\n\n\n\ntabla &lt;- data.frame(variable1 = c(1, 2, 3, 4, 5),\n                    variable2 = c(\"A\", \"B\", \"C\", \"D\", \"E\"))\n\ntabla"
+  },
+  {
+    "objectID": "index.html#tablas-de-datos-1",
+    "href": "index.html#tablas-de-datos-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de datos",
+    "text": "Tablas de datos\n\nSon contenedores bidimensionales que nos permiten almacenar datos de distintos tipos en filas y columnas.\nExisten varias formas de crear una tabla en R:\n\nDe manera manual (y quizá la más impráctica) usando la función data.frame:\n\n\n\ntabla &lt;- data.frame(variable1 = c(1, 2, 3, 4, 5),\n                    variable2 = c(\"A\", \"B\", \"C\", \"D\", \"E\"))\n\ntabla\n\n  variable1 variable2\n1         1         A\n2         2         B\n3         3         C\n4         4         D\n5         5         E"
+  },
+  {
+    "objectID": "index.html#tablas-de-datos-2",
+    "href": "index.html#tablas-de-datos-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de datos",
+    "text": "Tablas de datos\n\n\nLas otras formas para crear tablas de datos incluyen:\n\nInvocar tablas de paquetes de R (más para fines didácticos, ya sea que queramos probar un paquete de R, o como en este curso, para la enseñanza).\nImportar tablas de datos de archivos de texto (.txt), documentos separados por comas (.csv) o archivos de Excel (.xlsx).\nEsta última, sin lugar a dudas la manera más práctica para los fines de analizar nuestros datos.\nSin embargo, ya veremos todo ello en su debido momento."
+  },
+  {
+    "objectID": "index.html#matrices",
+    "href": "index.html#matrices",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Matrices",
+    "text": "Matrices\n\n\nAl igual que las tablas de datos, las matrices nos permiten almacenar datos en filas y columnas.\nSin embargo, una matriz puede contener elementos de un solo tipo.\n\n\n\n\nmatriz &lt;- matrix(data = c(1, 2, 3, 4, 5, 6, 7, 8, 9), ncol = 3)\n\nmatriz"
+  },
+  {
+    "objectID": "index.html#matrices-1",
+    "href": "index.html#matrices-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Matrices",
+    "text": "Matrices\n\nAl igual que las tablas de datos, las matrices nos permiten almacenar datos en filas y columnas.\nSin embargo, una matriz puede contener elementos de un solo tipo.\n\n\nmatriz &lt;- matrix(data = c(1, 2, 3, 4, 5, 6, 7, 8, 9), ncol = 3)\n\nmatriz\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9"
+  },
+  {
+    "objectID": "index.html#matrices-2",
+    "href": "index.html#matrices-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Matrices",
+    "text": "Matrices\n\n\nPero entonces, ¿por qué molestarnos con matrices?\n\nPara un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para ploteo lattice).\nPara un usuario avanzado, la mayor ventaja de tener los datos en forma matricial es que iterar y realizar computaciones sobre estas es más rápido (técnica común en lo que se conoce como low-level programming). Esto, en modelos que requieren bastas cantidades de datos (por ejemplo, data mining o natural language processing) conlleva a una mayor eficiencia en obtener resultados en tareas de identificación de patrones."
+  },
+  {
+    "objectID": "index.html#listas",
+    "href": "index.html#listas",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Listas",
+    "text": "Listas\n\n\nArreglo multidimensional de elementos no necesariamente del mismo tipo ni de la misma longitud.\n\n\n\n\nlista &lt;- list(escalar_1, vector_1, tabla, matriz)"
+  },
+  {
+    "objectID": "index.html#listas-1",
+    "href": "index.html#listas-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Listas",
+    "text": "Listas\n\nArreglo multidimensional de elementos no necesariamente del mismo tipo ni de la misma longitud.\n\n\nlista &lt;- list(escalar_1, vector_1, tabla, matriz)\n\nlista\n\n[[1]]\n[1] 100\n\n[[2]]\n[1] 1 2 3\n\n[[3]]\n  variable1 variable2\n1         1         A\n2         2         B\n3         3         C\n4         4         D\n5         5         E\n\n[[4]]\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9"
+  },
+  {
+    "objectID": "index.html#antes-de-continuar",
+    "href": "index.html#antes-de-continuar",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Antes de continuar…",
+    "text": "Antes de continuar…\n\n\n¿Cómo sabemos que tipo de datos tenemos en un vector (u otro objeto) si asignamos escalares de distintos tipos?\n\n\n\n\nstr(vector_4)\n\n chr [1:3] \"1\" \"dos\" \"3\"\n\nstr(lista)\n\nList of 4\n $ : num 100\n $ : num [1:3] 1 2 3\n $ :'data.frame':   5 obs. of  2 variables:\n  ..$ variable1: num [1:5] 1 2 3 4 5\n  ..$ variable2: chr [1:5] \"A\" \"B\" \"C\" \"D\" ...\n $ : num [1:3, 1:3] 1 2 3 4 5 6 7 8 9\n\nstr(matriz)\n\n num [1:3, 1:3] 1 2 3 4 5 6 7 8 9"
+  },
+  {
+    "objectID": "index.html#paquetes-y-librerías-en-r",
+    "href": "index.html#paquetes-y-librerías-en-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Paquetes y librerías en R",
+    "text": "Paquetes y librerías en R\n\n\nQuizá hayan escuchado el uso de estos términos como sinónimos. Siendo más técnicos:\n\nPaquete es una colección de funciones de R, datos y código compilado.\nLibrería es el directorio donde un paquete de R ha sido instalado y guardado.\n\nExisten dos tipos de paquetes:\n\nPaquetes de base (instalados como librerías estándar de R, ejemplos: utils y base)\nPaquetes de terceras partes (o externos, todos aquellos disponibles en CRAN)"
+  },
+  {
+    "objectID": "index.html#instalación-de-paquetes-en-r",
+    "href": "index.html#instalación-de-paquetes-en-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Instalación de paquetes en R",
+    "text": "Instalación de paquetes en R\n\n\nExisten dos formas de instalar paquetes en R\n\nMediante GUI de RStudio\nMediante el editor o la consola, ventanas 1 y 3 de RStudio, respectivamente\n\nEn este curso nos enfocaremos en hacer mínimo uso de la GUI. El motivo: mientras menos dependemos de la GUI, nuestros códigos (scripts) serán mas reproducibles e independientes de nuestra intervención cada vez que sean ejecutados."
+  },
+  {
+    "objectID": "index.html#instalación-paquetes-en-r",
+    "href": "index.html#instalación-paquetes-en-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Instalación paquetes en R",
+    "text": "Instalación paquetes en R\n\n\nEl comando base de R para instalar paquetes es install.packages\nPuede instalar un paquete a la vez:\n\n\n\n\ninstall.packages(\"tidyverse\")\n\n\n\nO más de una paquete a la vez:\n\n\n\n\n\ninstall.packages(c(\"palmerpenguins\", \"tidycomm\",\"fdth\", \"flextable\", \"modeest\"))\n\n\n\n\nPara llamar (cargar) una librería en R se usa el comando base library\n\n\n\n\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "index.html#ayuda-en-r",
+    "href": "index.html#ayuda-en-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Ayuda en R",
+    "text": "Ayuda en R\n\n\nEl comando (o función) de ayuda en R es ?.\nSe usa ? antecediendo al nombre de la función de la que deseemos saber más información. Ejemplo:\n\n\n\n\n?print"
+  },
+  {
+    "objectID": "index.html#ayuda-en-r-1",
+    "href": "index.html#ayuda-en-r-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Ayuda en R",
+    "text": "Ayuda en R\n\n\nOtra función de ayuda es help\n\n\n\n\nhelp(package = \"ggplot2\")"
+  },
+  {
+    "objectID": "index.html#ayuda-en-r-2",
+    "href": "index.html#ayuda-en-r-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Ayuda en R",
+    "text": "Ayuda en R\n\n\nMuy a menudo, nuestras dudas van más allá de lo que las funciones de ayuda de R nos puedan enseñar.\nAfortunadamente, R cuenta con una comunidad basta de usuarios dispuestos a solventar nuestras preguntas en redes sociales como X (conocida anteriormente como Twitter), Reddit e incluso FaceBook.\nSin embargo, el mejor foro de ayuda es StackOverflow\n\nComunidad de programadores (no únicamente de R) desde beginners hasta expertos en sus campos.\nUna posible limitante: la mejor ayuda se encuentra en Inglés\n\nOtros recursos de aprendizaje y ayuda de R:\n\nLearning Statistics with R\ntowards data science\nSTHDA\nGoogle"
+  },
+  {
+    "objectID": "index.html#autoevaluación-1",
+    "href": "index.html#autoevaluación-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Autoevaluación # 1",
+    "text": "Autoevaluación # 1\n\n\n\n\n\n\n\n\nLos creadores de R, fueron Gentleman e Ihaka de la universidad de Auckland\n\nV / F\n\n\n\n5 * 5 * 5 es equivalente a 5 ^ 3\n\nV / F\n\n\n\nUna lista es un arreglo que admite datos de una sola clase únicamente\n\nV / F\n\n\n\nQueremos comparar si x es igual a 5, es esto correcto:x = 5\n\nV / F\n\n\n\nLa función data.frame nos permite crear manualmente tablas de datos\n\nV / F"
+  },
+  {
+    "objectID": "index.html#autoevaluación-1-1",
+    "href": "index.html#autoevaluación-1-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Autoevaluación # 1",
+    "text": "Autoevaluación # 1\n\n\n\n\n\n\n\n\nAl crear un objeto de esta forma: 1_cuenta = 12 R lo crea sin error alguno\n\nV / F\n\n\n\nSi dejo un espacio en el nombre de un objeto, R me devuelve un error\n\nV / F\n\n\n\nEl comando install.libraries me permite instalar librerías\n\nV / F\n\n\n\nEn la expresión genérica mean(x, . . .) los puntos representan argumentos\n\nV / F\n\n\n\nEs la siguiente expresión correcta: z -&gt; c(1, 2, 3)\n\nV / F"
+  },
+  {
+    "objectID": "index.html#autoevaluación-1-2",
+    "href": "index.html#autoevaluación-1-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Autoevaluación # 1",
+    "text": "Autoevaluación # 1\nEn tu computador, ejecuta en el prompt la siguiente línea de código:\n?sd.\n\n\n\n\n\n\n\n\nx es un argumento de la función\n\nV / F\n\n\n\nna.rm es otro argumento de la función\n\nV / F\n\n\n\nna.rm le dice a la función sd que NO remueva observaciones perdidas\n\nV / F\n\n\n\nsd es la función de la librería base que calcula la desviación estándar\n\nV / F"
+  },
+  {
+    "objectID": "index.html#introducción",
+    "href": "index.html#introducción",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Introducción",
+    "text": "Introducción\n\n\nEl uso de los operandos básicos puede aplicarse sobre distintos tipos de objetos en R.\nNos saltaremos las operaciones sobre escalares, ya que estas resemblan el uso de una calculadora común.\nEn su lugar, nos concentraremos en operaciones sobre vectores, tablas de datos y listas, que en términos programáticos son más útiles.\nDebemos entonces comprender que una operación (o función de manera más general) se aplicará sobre todos los elementos de un objeto, a menos que especifiquemos lo contrario."
+  },
+  {
+    "objectID": "index.html#operaciones-aritméticas",
+    "href": "index.html#operaciones-aritméticas",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Operaciones aritméticas",
+    "text": "Operaciones aritméticas\n\n\nPodemos llevar a cabo las cinco operaciones básicas sobre la totalidad de elementos numéricos de un objeto sin mayor inconveniente. Ejemplo:\n\n\n\n\na &lt;- c(10, 20, -50, -10, 0)\na / 100\n\n[1]  0.1  0.2 -0.5 -0.1  0.0\n\na * 10\n\n[1]  100  200 -500 -100    0\n\na + 30\n\n[1]  40  50 -20  20  30\n\na - 30\n\n[1] -20 -10 -80 -40 -30\n\na ^ 2\n\n[1]  100  400 2500  100    0"
+  },
+  {
+    "objectID": "index.html#operaciones-lógicas",
+    "href": "index.html#operaciones-lógicas",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Operaciones lógicas",
+    "text": "Operaciones lógicas\n\n\nDe manera similar, los operadores lógicos también actúan sobre cada elemento de un objeto\n\n\n\n\na &lt;- c(10, 20, -50, -10, 0)\na &gt; 0\n\n[1]  TRUE  TRUE FALSE FALSE FALSE\n\na &gt;= 0\n\n[1]  TRUE  TRUE FALSE FALSE  TRUE\n\na == 0\n\n[1] FALSE FALSE FALSE FALSE  TRUE\n\na != 0\n\n[1]  TRUE  TRUE  TRUE  TRUE FALSE\n\na &lt; 0\n\n[1] FALSE FALSE  TRUE  TRUE FALSE\n\na &lt;= 0\n\n[1] FALSE FALSE  TRUE  TRUE  TRUE"
+  },
+  {
+    "objectID": "index.html#concatenación-de-vectores",
+    "href": "index.html#concatenación-de-vectores",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Concatenación de vectores",
+    "text": "Concatenación de vectores\n\n\nPodemos también concatenar uno o más objetos a un vector pre-existente. Esto es útil en el momento de crear nuestras propias funciones. Sin adentrarnos en mayor detalle aún, veamos el siguiente ejemplo por demás simplificado\n\n\n\n\nb &lt;- c(a, 2)\nb\n\n[1]  10  20 -50 -10   0   2\n\nc &lt;- c(3, 5)\nd &lt;- c(a, b, c)\nd\n\n [1]  10  20 -50 -10   0  10  20 -50 -10   0   2   3   5"
+  },
+  {
+    "objectID": "index.html#creación-de-factores",
+    "href": "index.html#creación-de-factores",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Creación de factores",
+    "text": "Creación de factores\n\n\nEs muy importante el especificar cuando una variable es un factor.\nCómo mencioné anteriormente, R reconocerá de manera automática como caracter cualquier valor que no sea numérico.\nEn caso de usar como un factor una variable que R reconoce como caracter únicamente, R realizará todo análisis que le pidamos utilizando el orden alfabético de la variable como el orden de los niveles del factor. Esto puede ser problemático si:\n\nQueremos que los niveles del factor tengan un orden específico.\nSi las pruebas estadísticas que realicemos requieren especificar un nivel como referencia."
+  },
+  {
+    "objectID": "index.html#creación-de-factores-1",
+    "href": "index.html#creación-de-factores-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Creación de factores",
+    "text": "Creación de factores\nFactor ordenado alfabéticamente\n\nvariable_factor_1 &lt;- c(\"A\", \"A\", \"B\", \"C\", \"C\", \"C\")\nvariable_factor_1 &lt;- factor(variable_factor_1)\nstr(variable_factor_1)\n\n Factor w/ 3 levels \"A\",\"B\",\"C\": 1 1 2 3 3 3\n\n\n\nFactor con orden distinto al alfabético\n\n\n\nvariable_factor_2 &lt;- c(\"Tr.A\", \"Tr.A\", \"Tr.B\", \"Control\", \"Control\", \"Control\")\nvariable_factor_2 &lt;- factor(variable_factor_2, levels = c(\"Control\", \"Tr.A\", \"Tr.B\"))\nstr(variable_factor_2)\n\n Factor w/ 3 levels \"Control\",\"Tr.A\",..: 2 2 3 1 1 1"
+  },
+  {
+    "objectID": "index.html#transformación-de-valores",
+    "href": "index.html#transformación-de-valores",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Transformación de valores",
+    "text": "Transformación de valores\n\n\nLas transformaciones más comunes de valores son a valores numéricos, caracteres y fechas.\nPara esto, haremos uso de las funciones as.numeric, as.character y as.Date respectivamente.\n\n\n\nEjemplo as.numeric. A veces, en la importación de datos, R asume como caracteres a valores numéricos (una causa común es el de designar en el archivo de origen a los valores perdidos con caracteres)\n\n\n\ntrans_num &lt;- c(1, 2, \"NA\", 3, 4)\nstr(trans_num)\n\n chr [1:5] \"1\" \"2\" \"NA\" \"3\" \"4\"\n\n\n\n\n\ntrans_num &lt;- as.numeric(trans_num)\nstr(trans_num)\n\n num [1:5] 1 2 NA 3 4\n\n\n\n\nEjemplo as.character.\n\nstr(variable_factor_2)\n\n Factor w/ 3 levels \"Control\",\"Tr.A\",..: 2 2 3 1 1 1\n\nvariable_factor_2 &lt;- as.character(variable_factor_2)\nstr(variable_factor_2)\n\n chr [1:6] \"Tr.A\" \"Tr.A\" \"Tr.B\" \"Control\" \"Control\" \"Control\""
+  },
+  {
+    "objectID": "index.html#transformación-de-valores-1",
+    "href": "index.html#transformación-de-valores-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Transformación de valores",
+    "text": "Transformación de valores\nFechas\n\n\nLa transformación de caracteres a fechas depende enormemente de los distintos formatos que existen para denotar una y de las unidades que se usan.\nPor tanto, no existe una solución única. Aquí abarcaremos el caso más sencillo en que el formato es YYYY-MM-DD.\nLa función base as.Date abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete lubridate del conjunto de paquetes tidyverse.\n\n\n\nEjemplo as.Date\n\nfechas &lt;- c(\"1985-10-14\", \"2021-12-25\", \"2023-01-01\", \"1999-05-06\", \"1900-01-02\")\nstr(fechas)\n\n chr [1:5] \"1985-10-14\" \"2021-12-25\" \"2023-01-01\" \"1999-05-06\" \"1900-01-02\"\n\nfechas &lt;- as.Date(fechas)\nstr(fechas)\n\n Date[1:5], format: \"1985-10-14\" \"2021-12-25\" \"2023-01-01\" \"1999-05-06\" \"1900-01-02\""
+  },
+  {
+    "objectID": "index.html#accediendo-elementos-específicos-de-objetos",
+    "href": "index.html#accediendo-elementos-específicos-de-objetos",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Accediendo elementos específicos de objetos",
+    "text": "Accediendo elementos específicos de objetos\n\n\nAcceder a elementos específicos de objetos es una tarea frecuente.\nSobre todo en casos como:\n\nIterando sobre un objeto dentro de una función.\nExtrayendo valores específicos de un output de R (por ejemplo, si por algún motivo queremos trabajar únicamente con el valor p de una serie de regresiones lineales)\nCambiando de manera manual desde R un dato que fue erróneamente ingresado en el archivo original de origen (.txt, .csv, .xlsx).\nAutomatizar nuestro código para tareas repetitivas (analizar varias tablas de datos con una estructura predeterminada y poco variable)."
+  },
+  {
+    "objectID": "index.html#accediendo-elementos-específicos-de-objetos-1",
+    "href": "index.html#accediendo-elementos-específicos-de-objetos-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Accediendo elementos específicos de objetos",
+    "text": "Accediendo elementos específicos de objetos\n\n\nEl operador de acceso a elementos es $.\n$ funciona únicamente con elementos que han sido nombrados dentro de un objeto (mayoritariamente tablas y listas, NO funciona con vectores).\n\n\n\n\ntabla &lt;- data.frame(variable1 = c(1, 2, 3, 4, 5),\n                    variable2 = c(\"A\", \"B\", \"C\", \"D\", \"E\"))\n\ntabla$variable1\n\n[1] 1 2 3 4 5\n\n\n\n\n\nej_lista &lt;- list(lista1 = c(1, 2, 3, 4, 5),\n                 lista2 = c(\"A\", \"B\", \"C\", \"D\", \"E\"))\n\nej_lista$lista1\n\n[1] 1 2 3 4 5"
+  },
+  {
+    "objectID": "index.html#indexación",
+    "href": "index.html#indexación",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Indexación",
+    "text": "Indexación\n\n\nOtra forma de acceder elementos específicos de un objeto, es mediante sus índices.\nUn elemento dentro de un objeto tiene tantos índices como dimensiones el objeto posea.\nLa sintaxis básica para acceder elementos se basa en el uso de corchetes []:\n\n[# del elemento] para vectores\n[# de la fila,# de la columna] para tablas y matrices\n[[# del elemento]] para listas\n\nContrario a Python, en R la indexación comienza con 1 en lugar de 0"
+  },
+  {
+    "objectID": "index.html#indexación-1",
+    "href": "index.html#indexación-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Indexación",
+    "text": "Indexación\nEjemplos\n\n¿Cuál es el segundo elemento en el siguiente vector?\n\n\n\nej_vector &lt;- c(\"lunes\", \"martes\", \"miercoles\", \"jueves\", \"viernes\")\nej_vector[2]\n\n[1] \"martes\"\n\n\n\n\n¿Cuál es el valor en la columna 1, fila 3 de la tabla de datos tabla?\n\n\n\ntabla[3, 1]\n\n[1] 3\n\n\n\n\n¿Cuál es el segundo elemento del objeto ej_lista?\n\nej_lista$lista2\n\n[1] \"A\" \"B\" \"C\" \"D\" \"E\"\n\nej_lista[[2]]\n\n[1] \"A\" \"B\" \"C\" \"D\" \"E\""
+  },
+  {
+    "objectID": "index.html#autoevaluación-2",
+    "href": "index.html#autoevaluación-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Autoevaluación # 2",
+    "text": "Autoevaluación # 2\nDado el siguiente objeto:\n\nev_1 &lt;- list(tabla_de_datos = data.frame(columna_1 = c(0.2, 2.5, 3.14, 4.15, 5.55),\n                                         columna_2 = c(\"A\", \"B\", \"C\", \"D\", \"E\"),\n                                         columna_3 = c(\"1985-10-14\", \"2021-12-25\", \"2023-01-01\", \"1999-05-06\", \"1900-01-02\")),\n             vector_ejemplo = c(\"F\", \"T\", \"F\", \"T\",\"F\"),\n             escalar_ejemplo = 100)\n\n\nEs el elemento vector_ejemplo conformado por valores: Lógicos/caracteres\nPara acceder a la tercera fila de la primera columna del elemento tabla_de_datos, ¿Cuál(es) de las siguientes líneas de código es(son) la(s) correcta(s)?\n\n\nev_1$tabla_de_datos[[1]]\nev_1$tabla_de_datos[1, 3]\nev_1[[1]][3, 1]\nev_1$tabla_de_datos$columna_2[3]\nev_1[[2]][3, 1]\nev_1$tabla_de_datos$columna_1[3]\n\n\nDeseo concatenar los elementos escalar_ejemplo con vector_ejemplo (en ese orden) en un elemento adicional del objeto ev_1 de nombre conc_ejemplo, ¿Cuál de las siguientes líneas de código es la correcta?\n\n\nev_1[[4]] &lt;- ev_1[[2]] + ev_1[[3]]\nev_1$conc_ejemplo &lt;- c(ev_1[[3]],ev_1[[2]])\nev_1$conc_ejemplo &lt;- c(ev_1$vector_escalar + ev_1$ejemplo_escalar)\n\n\nDeseo reemplazar el cuarto elemento de columna_2 en la tabla_de_datos por la letra \"E\", ¿Cuál sería una solución?\nSupongamos que para un determinado análisis con tabla_de_datos, la columna_2 corresponde a mi factor. En este factor mi nivel de referencia es “E”. ¿Cómo especifico en R que este sea el caso?\nLa variable columna_3 de tabla_de_datos denota fechas, ¿Cómo darías el formato adecuado para que R la interprete como tal?"
+  },
+  {
+    "objectID": "index.html#introducción-1",
+    "href": "index.html#introducción-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Introducción",
+    "text": "Introducción\n\n\nPara ilustrar esta sección, usaremos la tabla de datos de R mtcars.\n\n\n\n\nmtcars\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2"
+  },
+  {
+    "objectID": "index.html#parámetros-poblacionales-media-aritmética",
+    "href": "index.html#parámetros-poblacionales-media-aritmética",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Parámetros poblacionales: Media aritmética",
+    "text": "Parámetros poblacionales: Media aritmética\n\n\n\n\n\n\n\n\nSímbolo\n¿Qué es?\n¿Sabemos qué es?\n\n\n\n\n\\(\\overline{X}\\)\nMedia aritmética de la muestra\nCalculada de los datos\n\n\n\\(\\mu\\)\nVerdadera media aritmética de la población\nCasi nunca es conocida\n\n\n\\(\\hat{\\mu}\\)\nEstimado de la media aritmética de la población\nSí, identica a \\(\\overline{X}\\)\n\n\n\n\\[\n\\overline{X} = \\frac{1}{n}\\sum^{n}_{i=1}\\left(X_i\\right)\n\\]"
+  },
+  {
+    "objectID": "index.html#parámetros-poblacionales-desviación-estándar",
+    "href": "index.html#parámetros-poblacionales-desviación-estándar",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Parámetros poblacionales: Desviación estándar",
+    "text": "Parámetros poblacionales: Desviación estándar\n\n\n\n\n\n\n\n\nSímbolo\n¿Qué es?\n¿Sabemos qué es?\n\n\n\n\n\\(s\\)\nDesviación estándar de la muestra\nCalculada de los datos\n\n\n\\(\\sigma\\)\nVerdadera desviación estándar de la población\nCasi nunca es conocida\n\n\n\\(\\hat{\\sigma}\\)\nEstimado de la deviación estándar de la población\nSí, pero no es igual a \\(s\\)\n\n\n\n\n\n\\[\ns = \\sqrt{\\frac{1}{n} \\sum_{i=1}^n (X_i - \\overline{X})^2}\n\\]\n\n\\[\n\\sigma = \\sqrt{\\frac{1}{n-1} \\sum_{i=1}^n (X_i - \\overline{X})^2}\n\\]"
+  },
+  {
+    "objectID": "index.html#parámetros-poblacionales-varianza",
+    "href": "index.html#parámetros-poblacionales-varianza",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Parámetros poblacionales: varianza",
+    "text": "Parámetros poblacionales: varianza\n\n\n\n\n\n\n\n\nSímbolo\n¿Qué es?\n¿Sabemos qué es?\n\n\n\n\n\\(s^2\\)\nVarianza de la muestra\nCalculada de los datos\n\n\n\\(\\sigma^2\\)\nVerdadera varianza de la población\nCasi nunca es conocida\n\n\n\\(\\hat{\\sigma}^2\\)\nEstimado de la varianza de la población\nSí, pero no es igual a \\(s^2\\)\n\n\n\n\n\n\\[\ns^2 = \\frac{1}{n} \\sum_{i=1}^n (X_i - \\overline{X})^2\n\\]\n\n\\[\n\\sigma^2 = \\frac{1}{n-1} \\sum_{i=1}^n (X_i - \\overline{X})^2\n\\]"
+  },
+  {
+    "objectID": "index.html#parámetros-poblacionales-en-r",
+    "href": "index.html#parámetros-poblacionales-en-r",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Parámetros poblacionales en R",
+    "text": "Parámetros poblacionales en R\nMedia aritmética\n\nmean(mtcars$mpg)\n\n[1] 20.09062\n\n\n\nDesviación estándar\n\nsd(mtcars$mpg)\n\n[1] 6.026948\n\n\n\n\nVarianza\n\nvar(mtcars$mpg)\n\n[1] 36.3241"
+  },
+  {
+    "objectID": "index.html#otras-medidas",
+    "href": "index.html#otras-medidas",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Otras medidas",
+    "text": "Otras medidas\n\nMediana\n\nmedian(mtcars$mpg)\n\n[1] 19.2\n\n\n\n\nCuantiles (cuartiles)\n\nquantile(mtcars$mpg)\n\n    0%    25%    50%    75%   100% \n10.400 15.425 19.200 22.800 33.900 \n\n\n\n\nModa\n\nlibrary(modeest)\nmlv(mtcars$mpg, method = \"hsm\")\n\n[1] 21.2\n\n\n\n\nCoeficiente de variación\n\nsd(mtcars$mpg)/mean(mtcars$mpg)\n\n[1] 0.2999881"
+  },
+  {
+    "objectID": "index.html#autoevaluación-3",
+    "href": "index.html#autoevaluación-3",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Autoevaluación # 3",
+    "text": "Autoevaluación # 3\n\n\n\n\n\n\n\n\nEl coeficiente de variación es adimensional\n\nV / F\n\n\n\nLa media poblacional se aproxima a la media muestral con una corrección\n\nV / F\n\n\n\nLa desv. est. muestral es un estimador de la poblacional después de una corrección\n\nV / F\n\n\n\nLa moda es igual al valor medio de una distribución\n\nV / F\n\n\n\nEl primer cuartil corresponde al 50% de probabilidad de una distribución\n\nV / F"
+  },
+  {
+    "objectID": "index.html#autoevaluación-3-1",
+    "href": "index.html#autoevaluación-3-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Autoevaluación # 3",
+    "text": "Autoevaluación # 3\nUsando la variable disp de mtcars:\n\n\n\n\n\n\n\n\nLa media aritmética es igual a\n\na) 220.9\nb) 139.0\nc) 230.7\nd) 401.2\n\n\n\nLa desviación estándar es igual a\n\na) 33.1\nb) 123.9\nc) 120.2\nd) 210.7\n\n\n\nLa varianza es igual a\n\na) 1095.6\nb) 15360.8\nc) 14448.0\nd) 44394.5\n\n\n\nEl tercer cuartil es\n\na) 71.1\nb) 120.8\nc) 196.3\nd) 326.0\n\n\n\nEl coeficiente de variación es\n\na) 0.45\nb) 0.15\nc) 0.54\nd) 0.82"
+  },
+  {
+    "objectID": "index.html#estadísticos-descriptivos-y-tablas-de-frecuencia",
+    "href": "index.html#estadísticos-descriptivos-y-tablas-de-frecuencia",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Estadísticos descriptivos y tablas de frecuencia",
+    "text": "Estadísticos descriptivos y tablas de frecuencia\n\n\nPara ilustrar esta sección, utilizaremos la base de datos de “Palmer penguins”:\n\nLos datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería palmerpenguins."
+  },
+  {
+    "objectID": "index.html#estadísticos-descriptivos",
+    "href": "index.html#estadísticos-descriptivos",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Estadísticos descriptivos",
+    "text": "Estadísticos descriptivos\n\nLa forma mas sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base summary\n\n\n\nlibrary(palmerpenguins)\nsummary(penguins)\n\n      species          island    bill_length_mm  bill_depth_mm  \n Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  \n Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  \n Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  \n                                 Mean   :43.92   Mean   :17.15  \n                                 3rd Qu.:48.50   3rd Qu.:18.70  \n                                 Max.   :59.60   Max.   :21.50  \n                                 NA's   :2       NA's   :2      \n flipper_length_mm  body_mass_g       sex           year     \n Min.   :172.0     Min.   :2700   female:165   Min.   :2007  \n 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  \n Median :197.0     Median :4050   NA's  : 11   Median :2008  \n Mean   :200.9     Mean   :4202                Mean   :2008  \n 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  \n Max.   :231.0     Max.   :6300                Max.   :2009  \n NA's   :2         NA's   :2"
+  },
+  {
+    "objectID": "index.html#estadísticos-descriptivos-1",
+    "href": "index.html#estadísticos-descriptivos-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Estadísticos descriptivos",
+    "text": "Estadísticos descriptivos\n\n\nUsar la función summary resulta útil para hacer chequeos sobre la marcha.\nPara obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete tidycomm\n\ndescribe: para generar tablas de estadísticos descriptivos de variables cuantitativas\ndescribe_cat: para tablas de estadísticos descriptivos de variables categóricas\n\n\n\n\n\nlibrary(tidycomm)\ndescribe(penguins)\n\n# A tibble: 5 × 15\n  Variable           N Missing      M      SD    Min    Q25    Mdn    Q75    Max\n  &lt;chr&gt;          &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1 bill_length_mm   342       2   43.9   5.46    32.1   39.2   44.4   48.5   59.6\n2 bill_depth_mm    342       2   17.2   1.97    13.1   15.6   17.3   18.7   21.5\n3 flipper_lengt…   342       2  201.   14.1    172    190    197    213    231  \n4 body_mass_g      342       2 4202.  802.    2700   3550   4050   4750   6300  \n5 year             344       0 2008.    0.818 2007   2007   2008   2009   2009  \n# ℹ 5 more variables: Range &lt;dbl&gt;, CI_95_LL &lt;dbl&gt;, CI_95_UL &lt;dbl&gt;,\n#   Skewness &lt;dbl&gt;, Kurtosis &lt;dbl&gt;\n\n\n\n\n\nlibrary(tidycomm)\ndescribe_cat(penguins)\n\n# A tibble: 3 × 6\n  Variable     N Missing Unique Mode   Mode_N\n  &lt;chr&gt;    &lt;int&gt;   &lt;int&gt;  &lt;int&gt; &lt;chr&gt;   &lt;int&gt;\n1 species    344       0      3 Adelie    152\n2 island     344       0      3 Biscoe    168\n3 sex        333      11      3 male      168"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia",
+    "href": "index.html#tablas-de-frecuencia",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\n\nExisten dos formas de crear tablas de frecuencia:\n\nA partir de variables categóricas\nCategorizando una variable continua\n\nUsualmente se presentan:\n\nFrecuencia absoluta: número de observaciones por categoría\nFrecuencia acumulada: suma de frecuencias absolutas\nFrecuencia relativa: frecuencia absoluta/total de observaciones\nFrecuencia relativa acumulada: suma de frecuencias relativas"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-1",
+    "href": "index.html#tablas-de-frecuencia-1",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\n\nA partir de una variable categórica\n\n\n\n\nlibrary(fdth)                     # ftdh es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                  # attach es un comando que convierte las columnas en objetos"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-2",
+    "href": "index.html#tablas-de-frecuencia-2",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nA partir de una variable categórica\n\n\nlibrary(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                # attach es un comando que convierte las columnas en objetos\nhead(penguins)                  # le damos un vistazo a las variables (columnas)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-3",
+    "href": "index.html#tablas-de-frecuencia-3",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nA partir de una variable categórica\n\n\nlibrary(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                # attach es un comando que convierte las columnas en objetos\ntabla_frec1 &lt;- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-4",
+    "href": "index.html#tablas-de-frecuencia-4",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nA partir de una variable categórica\n\n\nlibrary(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia\nattach(penguins)                # attach es un comando que convierte las columnas en objetos\ntabla_frec1 &lt;- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia\ntabla_frec1\n\n  Category   f   rf rf(%)  cf  cf(%)\n    Adelie 152 0.44 44.19 152  44.19\n    Gentoo 124 0.36 36.05 276  80.23\n Chinstrap  68 0.20 19.77 344 100.00\n\n\n\n\nf: frecuencia absoluta\nrf: frecuencia relativa, rf(%): frecuencia relativa en %\ncf: frecuencia acumulada, cf(%): frecuencia acumulada en %"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-5",
+    "href": "index.html#tablas-de-frecuencia-5",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\n\nCategorizando una variable continua\n\n\n\n\ntabla_frec2 &lt;- fdt(body_mass_g, na.rm = T)"
+  },
+  {
+    "objectID": "index.html#tablas-de-frecuencia-6",
+    "href": "index.html#tablas-de-frecuencia-6",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Tablas de frecuencia",
+    "text": "Tablas de frecuencia\n\nCategorizando una variable continua\n\n\ntabla_frec2 &lt;- fdt(body_mass_g, na.rm = T)\ntabla_frec2\n\n Class limits  f   rf rf(%)  cf cf(%)\n  [2673,3042) 11 0.03  3.20  11  3.20\n  [3042,3411) 47 0.14 13.66  58 16.86\n  [3411,3780) 71 0.21 20.64 129 37.50\n  [3780,4149) 53 0.15 15.41 182 52.91\n  [4149,4518) 45 0.13 13.08 227 65.99\n  [4518,4887) 41 0.12 11.92 268 77.91\n  [4887,5256) 28 0.08  8.14 296 86.05\n  [5256,5625) 26 0.08  7.56 322 93.60\n  [5625,5994) 16 0.05  4.65 338 98.26\n  [5994,6363)  4 0.01  1.16 342 99.42\n\n\n\n\nLa librería fdth categoriza una variable continua en base a tres distintos algoritmos. El “default” es el algoritmo “Sturges” (ver ?fdth para más información)."
+  },
+  {
+    "objectID": "index.html#cómo-exporto-mis-tablas",
+    "href": "index.html#cómo-exporto-mis-tablas",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "¿Cómo exporto mis tablas?",
+    "text": "¿Cómo exporto mis tablas?\n\n\nExisten varias opciones para exportar tablas a otros formatos (.pdf, .docx, .html)\n\n\n\n\nlibrary(flextable)\nft1 &lt;- flextable(tabla_frec1)\nft2 &lt;- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista\nsave_as_docx(\"Tabla_1\" = ft1, \"Tabla_2\" = ft2, \n             path = \"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx\")\ndetach(penguins) # IMPORTANTISIMO!"
+  },
+  {
+    "objectID": "index.html#autoevaluación-4",
+    "href": "index.html#autoevaluación-4",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Autoevaluación # 4",
+    "text": "Autoevaluación # 4\nCarga los datos de base iris y aparea los siguientes literales\n\n\n\n\n\n\n\na) Media aritmética de Sepal.Length\nb) Número total de observaciones\nc) Desv. Est. de Petal.Width\nd) Valor mínimo de Sepal.Width\ne) Frecuencia relativa de la especie setosa\nf) Frecuencia acumulada hasta especie versicolor\na) 66.67%\nb) 150\nc) 0.33\nd) 5.84\ne) 2\nf) 0.762"
+  },
+  {
+    "objectID": "index.html#funciones-y-librerías-importantes-de-esta-sesión",
+    "href": "index.html#funciones-y-librerías-importantes-de-esta-sesión",
+    "title": "Módulo 1: Generalidades e Introducción a R",
+    "section": "Funciones y librerías importantes de esta sesión",
+    "text": "Funciones y librerías importantes de esta sesión\nFunciones\n\n\ndata.frame nos permite crear una tabla de datos de manera manual.\nstr nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R.\ninstall.packages nos permite instalar paquetes de CRAN en R.\nlibrary nos permite invocar/llamar una librería de R.\n? y help son comandos de ayuda de R.\nfactor nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles.\nas.numeric, as.character y as.Date transforman valores a numéricos, caracteres y fechas.\nLas funciones mean, sd, var, median y quantile calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente.\nattach convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad.\ndettach revierte a attach.\n\n\n\nLibrerias\n\n\nmodeest funciones para estimar la moda de una distribución.\n\nmlv función para estimación de la moda de datos continuos.\n\npalmerpenguins datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida.\ntidycomm funciones para calcular estadísticos descriptivos.\n\ndescribe crea una tabla de estadísticos descriptivos para variables continuas.\ndescribe_cat crea una tabla de estadísticos descriptivos para variables categóricas.\n\nfdth funciones para crear tablas de frecuencias.\n\nfdt_cat crea una tabla de frecuencia para variables categóricas.\nfdt categoriza una variable continua para crear una tabla de frecuencias.\n\nflextable paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf)\n\nflextable principal función para dar formato a una tabla"
+  }
+]
