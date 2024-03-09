@@ -1,0 +1,1597 @@
+---
+title: "Módulo 1: Generalidades e Introducción a R"
+title-slide-attributes:
+  data-background-image: images/icon.png
+  data-background-size: contain
+  data-background-opacity: "0.2"
+author: 
+  - name: Mauricio Moreno, PhD
+logo: images/icon.png
+format: 
+  revealjs:
+    slide-number: true
+    width: 1366
+    preview-links: auto
+    touch: true
+    chalkboard:
+      theme: whiteboard
+      boardmarker-width: 4
+      buttons: false
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+# ¡Conozcámonos!
+
+## Acerca del curso {.smaller}
+
+::: incremental
+-   Objetivos de aprendizaje:
+
+    -   Realizar operaciones básicas en R, tales como: cargar, modificar, limpiar y guardar tablas de datos.
+    
+    -   Realizar gráficos de manera profesional usando R.
+    
+    -   Llevar a cabo análisis exploratorio de datos.
+    
+    -   Llevar a cabo, interpretar y reportar los resultados de metodologías estadísticas tales como: pruebas t, pruebas no paramétricas y análisis de varianza.
+    
+    -   Crear reportes en formatos docx, pptx, pdf y html usando Quarto y R.
+    
+    -   Escribir documentos académicos (por ejemplo una tesis de grado) usando Quarto.
+    
+    -   Entender la factibilidad de crear páginas web en combinación de Quarto y GitHub.
+
+-   Pre-requisitos
+
+    -   Computador con mínimo 2 GB de RAM y **procesador de 64 bits**.
+
+    -   Conexión estable a internet
+
+    -   Recomendado: sistema operativo Windows 10/11
+:::
+
+## Generalidades {.smaller}
+
+::: incremental
+-   Estructura del curso
+
+    -   4 sesiones de 5 horas cada una. Días Sábados 16, 23 de Marzo, 6 y 13 de Abril
+
+    -   8H30 a 13H30 (Dos recesos de 10 minutos cada uno)
+
+-   Canales de comunicación:
+
+    -   Email: **mmorenozambrano\@protonmail.com**
+
+-   Tarea final de curso:
+
+    -   40% entrega de autoevaluaciones resueltas (con código en caso de resolución de ejercicios).
+
+    -   60% reporte con aplicación de conocimientos adquiridos sobre una base de datos propia o propuesta durante el curso.
+
+    -   Mínima nota de aprobación: 70%
+:::
+
+## Generalidades {visibility="uncounted"}
+
+::: incremental
+-   Materiales:
+
+    -   Las tablas de datos que usaremos son de acceso abierto. En su mayoría, provenientes de paquetes o librerías de R.
+
+    -   Un listado comprensivo de los materiales por módulo se encuentra detallado en la página web del curso.
+
+-   Recursos complementarios:
+
+    -   He creado el contenido del curso a partir de varios recursos libremente disponibles en el internet (mayoritariamente de fuentes en Inglés).
+
+    -   Al igual que los materiales, los recursos complementarios se encuentran detallados en la página web del curso.
+:::
+
+# Introducción a R
+
+## Una breve historia de R {.smaller}
+
+::: columns
+::: {.column width="20%"}
+::: {layout="[[-1], [1], [-1]]"}
+![](images/rlogo.png){width="129"}
+:::
+:::
+
+::: {.column width="80%"}
+::: incremental
+-   1991: Robert Gentleman y Ross Ihaka (Universidad de Auckland, NZ) empiezan a desarrollar R
+-   1995: R se convierte en un proyecto *open-source*
+-   1997: Se establecen el *Comprehensive R Archive Network* (CRAN) y el R *core group*
+-   2000: Lanzamiento de R versión 1.0.0
+-   2003: Se establece la R *Foundation*
+-   2004: Se lleva a cabo la primera conferencia UseR! en Viena, Austria
+-   2006: Se edita el primer número del *R Journal*
+-   2011: Lanzamiento de RStudio versión beta
+-   2016: Lanzamiento de RStudio versión 1.0.0
+-   2017: CRAN alcanza más de 10000 paquetes públicos
+:::
+:::
+:::
+
+## ¿Por qué R? {.smaller}
+
+::: columns
+::: {.column width="50%"}
+::: {layout="[[-1], [1], [-1]]"}
+![[Uso de R comparado con SAS, SPSS y JMP en Ecología (Tomado de Touchon y McCoy (2016), *Ecosphere* **7** (8))](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.1394){target="_blank"}](images/use.jpg){fig-align="center"}
+:::
+:::
+
+::: {.column width="50%"}
+::: incremental
+-   Su uso se va extendiendo cada vez más en el ámbito académico (e industrial).
+
+-   Software libre.
+
+-   Amplio abanico de paquetes/librerías (20554 al 09.03.2024).
+
+-   ¡Basta comunidad de R enthusiasts!.
+
+-   Versátil:
+
+    -   Gráficos listos para publicación.
+
+    -   Generación de reportes, páginas web, presentaciones y libros en distintos formatos (rmarkdown, blogdown, quarto).
+
+    -   Construcción de aplicaciones interactivas para visualización/análisis de datos (rshiny).
+
+-   A continuación, algunos ejemplos de la versatilidad de R.
+:::
+:::
+:::
+
+## Gráficos listos para publicación
+
+![](images/ejemplot1.png){fig-align="center"}
+
+::: footer
+[Moreno-Zambrano, *et al.* (2022), R. S. O. Sci. **9**(2)](https://royalsocietypublishing.org/doi/full/10.1098/rsos.210274){target="_blank"}
+:::
+
+## Gráficos listos para publicación {visibility="uncounted"}
+
+![](images/map.png){fig-align="center"}
+
+::: footer
+Moreno-Zambrano, *et al.* (2018) *No publicado*
+:::
+
+## Gráficos listos para publicación {visibility="uncounted"}
+
+![](images/netw_p.jpg){fig-align="center"}
+
+::: footer
+[Gráfica propia, \@psignificant](https://twitter.com/psignificant/status/1083538655648628737){target="_blank"}
+:::
+
+## Animaciones
+
+![](images/a_1.png){fig-align="center"}
+
+::: footer
+[Gráfica para, \@BIOscience_N](https://twitter.com/BIOscience_N/status/1100381831663370240){target="_blank"}
+:::
+
+## Animaciones {visibility="uncounted"}
+
+![](images/a_2.png){fig-align="center"}
+
+::: footer
+[Gráfica creada por Michael Harper, tomado de *Animated Plots with R*](https://mikeyharper.uk/animated-plots-with-r/){target="_blank"}
+:::
+
+## Animaciones {visibility="uncounted"}
+
+![](images/ani_3.png){fig-align="center"}
+
+::: footer
+[Gráfica creada por David Smith, tomada de *Global Migration Animated with R*](https://blog.revolutionanalytics.com/2018/06/global-migration-animated-with-r.html){target="_blank"}
+:::
+
+## Páginas web
+
+![](images/w_p.png){fig-align="center"}
+
+::: footer
+[Página web personal](https://mmorenozam.netlify.app){target="_blank"}
+:::
+
+## Reportes
+
+![](images/w_p2.png){fig-align="center" height="580"}
+
+::: footer
+[Notebook para StanCon 2019 (Cambridge, UK)](https://mmorenozam.github.io/stan2019/){target="_blank"}
+:::
+
+## Apps interactivas (Shiny Apps)
+
+![](images/shini.png){fig-align="center"}
+
+::: footer
+[Shiny App del ICGC Data portal para visualizar el genoma de pacientes con cáncer pancreático](https://gallery.shinyapps.io/genome_browser/){target="_blank"}
+:::
+
+## Instalación de R {.smaller}
+
+::: incremental
+::: r-fit-text
+1.  Ingresa a [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/){target="_blank"}
+
+2.  Descarga la última versión disponible de R
+
+3.  Ejecuta el archivo .exe para iniciar la instalación
+
+    -   Recomendado: No cambies el directorio sugerido por el asistente de instalación
+
+    -   Opcional: No instalar traducciones de los mensajes de R
+:::
+:::
+
+. . .
+
+![](images/trans.png){fig-align="center" width="364"}
+
+## Instalación de RStudio
+
+::: incremental
+1.  Ingresa a [https://posit.co/download/rstudio-desktop/#download](https://posit.co/download/rstudio-desktop/#download){target="_blank"}
+2.  Click en la opción de instalar "RStudio Desktop for Windows"
+3.  Ejecuta el archivo .exe para iniciar la instalación
+    -   No cambies las sugerencias pre-establecidas para la instalación
+    -   En el caso de tener una versión de R anterior a la previamente instalada, es probable que la primera vez que abramos RStudio, este nos pregunte que version queremos usar (recomendado usar la última versión de R)
+:::
+
+## Instalación de Rtools (opcional) {.smaller}
+
+::: incremental
+![](images/warning.png)
+
+-   Rtools es una cadena de herramientas para compilar librerías de R en Windows basada en lenguajes C/C++/Fortran.
+
+-   No es necesario en sistemas operativos de Apple o basados en Unix (Linux).
+
+-   Se puede usar R en Windows sin necesidad de Rtools por la existencia de versiones de librerías en formato binario (ya previamente compiladas).
+
+-   Las ventajas de contar con Rtools:
+
+    -   Posibilidad de actualizar librerías a sus mas recientes versiones.
+
+    -   Compilación de versiones beta de librerías experimentales aun no disponibles en CRAN.
+
+    -   Uso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. rstan)
+
+-   En caso de que desees instalar Rtools, sigue las instrucciones en este link [https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html){target="_blank"}
+:::
+
+## GUI RStudio
+
+![](images/gui.png){fig-align="center"}
+
+## GUI RStudio {.smaller visibility="uncounted"}
+
+1.  Editor: ventana donde escribimos código. Puede contener tantas pestañas como scripts de R tengamos abiertos. No se ejecuta a no ser que ordenemos a R hacerlo.
+
+2.  Ambiente/historia de trabajo: nos permite visualizar los objetos que vayamos creando durante la ejecución del código así como el orden de los comandos ejecutados.
+
+3.  Consola: o terminal de R, es la interface directa de RStudio con R. En esta podemos ejecutar comandos línea por línea y visualizar los resultados de la ejecución de lo que escribamos en el editor.
+
+4.  Varias pestañas de importancia:
+
+    -   Plots: donde se producirán los plots que ejecutemos
+
+    -   Packages: listado de librerías instaladas
+
+    -   Help: ayuda de R (activada por comando o búsqueda manual)
+
+    -   Viewer: crea una ventana fuera del ambiente de RStudio para visualizar gráficos
+
+## Generalidades del lenguaje R {.smaller}
+
+::: incremental
+-   Como otros lenguajes de programación, R es sensible a letras mayúsculas y minúsculas (`Tabla` ≠ `tabla`).
+
+-   A diferencia de Python por ejemplo, R no es sensible a la indentación.
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+for (i in 1:20){
+  x = 0 + i
+  print(x)
+}
+```
+
+. . .
+
+```{r echo=T, eval=F}
+for (i in 1:20){
+x = 0 + i
+print(x)
+}
+```
+
+. . .
+
+-   Para asignar contenido (valores o elementos) a un objeto, los operadores de R son `<-`, `=` o `->`
+
+. . .
+
+```{r echo=T, eval=F}
+x = 0
+y <- 0
+0 -> z
+```
+
+. . .
+
+-   No existe una reglamentación de tipo alguno, pero encontrarán que el operador `<-` es el más usado.
+
+. . .
+
+-   R no reconoce nombres de objetos que comiencen con números.
+
+. . .
+
+```{r echo=T, eval=F}
+1variable <- 2
+```
+
+## Generalidades del lenguaje R {.smaller visibility="uncounted"}
+
+::: incremental
+-   Al importar tablas, R asigna el valor de la primera fila de cada columna como su nombre.
+
+-   En el caso de que el nombre de la columna empiece con un número, R asigna caracteres para evitar errores. Ejemplo: si en un archivo de Excel tenemos por nombre de columna `1glucosa`, R lo importa como `X.1glucosa`
+
+-   El nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como `_` o `-` cuando deseemos contar con espacios en nuestros archivos a importar.
+
+-   Dentro del ambiente de R, es aconsejable evitar espacios vacíos (se los puede usar, pero igualmente, se requiere de sintaxis especial para referirnos a esos objetos).
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+una variable <- 2
+`una variable` <- 2
+```
+
+. . .
+
+-   R tiene nombres de funciones y objetos predeterminados. Por ejemplo, elementos que representan respuestas lógicas son representados con las letras `T` y `F`.
+
+. . .
+
+-   Por tanto, es aconsejable el evitar asignar nombres a nuestros objetos que puedan entrar en conflicto con otras funciones u objetos de R.
+
+## Tipos de datos
+
+::: incremental
+-   Los tipos de datos que R es capaz de manejar son diversos. Los más comunes son:
+
+    -   Numéricos, tanto enteros como reales (`num`: `1`, `3.14`)
+
+    -   Caractéres (`chr`: `"a"`, `"estadistica"`)
+
+    -   Factores (`Factor`: pueden ser letras o números)
+
+    -   Lógicos (`logi`: `True`, `False` o también `T` y `F`)
+
+    -   Fechas (`Date`: `"1985-10-14"`)
+:::
+
+## Operadores básicos
+
+| Operación      | Operador | Ejemplo  | Resultado |
+|----------------|:--------:|:--------:|:---------:|
+| Suma           |   `+`    | `10 + 2` |   `12`    |
+| Resta          |   `-`    | `6 - 3`  |    `3`    |
+| Multiplicación |   `*`    | `4 * 4`  |   `16`    |
+| División       |   `/`    | `12 / 3` |    `4`    |
+| Potencia       |   `^`    | `5 ^ 2`  |   `25`    |
+
+-   Existen otros operadores, como el de "cascada" (*pipeline operator*) `%>%`, que usaremos más adelante
+
+## Operadores Booleanos de comparación
+
+| Operación         | Operador |  Ejemplo   | Resultado |
+|-------------------|:--------:|:----------:|:---------:|
+| Mayor que         |   `>`    |  `5 > 1`   |    `T`    |
+| Menor que         |   `<`    | `12 < 11`  |    `F`    |
+| Igual que         |   `==`   | `33 == 33` |    `T`    |
+| No igual que      |   `!=`   | `10 != 10` |    `F`    |
+| Mayor o igual que |   `>=`   |  `5 >= 5`  |    `T`    |
+| Menor o igual que |   `<=`   |  `4 <= 2`  |    `F`    |
+
+## Operadores Booleanos lógicos
+
+| Operación | Operador |      Ejemplo      | Resultado |
+|-----------|:--------:|:-----------------:|:---------:|
+| No        |   `!`    |     `!(1==1)`     |    `F`    |
+| O         |   `|`    | `(1==1) | (2==3)` |    `T`    |
+| Y         |   `&`    | `(1==1) | (2==3)` |    `F`    |
+
+## Tipos de objetos en R
+
+::: incremental
+-   En R, los objetos son distintas formas de almacenar datos/información.
+
+-   Existen varios tipos de objetos en R, los más fundamentales:
+
+    -   Escalares
+
+    -   Vectores
+
+    -   Tablas de datos
+
+    -   Matrices
+
+    -   Listas
+
+-   Tendemos a referirnos a los escalares y vectores comúnmente como **variables**.
+:::
+
+## Escalares
+
+::: incremental
+-   Son los objetos más sencillos ya que consisten de un solo elemento.
+
+-   Son la base para la creación de objetos más complejos.
+:::
+
+. . .
+
+```{r echo=T}
+#| include: true
+#| code-line-numbers: "1|2|3|4|5"
+escalar_1 <- 100                # número
+escalar_2 <- "cien"             # caracter
+escalar_3 <- T                  # lógico
+escalar_4 <- "2000-01-01"       # fecha?
+escalar_5 <- "A"                # caracter o factor?
+```
+
+. . .
+
+-   R no reconoce una fecha o un factor sin que se lo especifiquemos. Ya veremos más adelante como hacerlo.
+
+## Vectores
+
+::: incremental
+-   Son contenedores unidimensionales de dos o más elementos, **necesariamente** del mismo tipo.
+
+-   Para crear un vector, usamos la sintaxis `c()`, donde los elementos del vector irán dentro del paréntesis:
+:::
+
+. . .
+
+```{r echo=T}
+#| include: true
+#| code-line-numbers: "1|2|3|4"
+vector_1 <- c(1, 2, 3)                
+vector_2 <- c("uno", "dos", "tres")
+vector_3 <- c(T, F, T, F)
+vector_4 <- c(1, "dos", 3)
+```
+
+. . .
+
+-   ¿Qué pasa con el `vector_4`?: cuando escalares de distinto tipo son asignados como elementos de un vector, R transforma todos los elementos a un mismo tipo.
+
+## Tablas de datos
+
+::: incremental
+-   Son contenedores bidimensionales que nos permiten almacenar datos de distintos tipos en filas y columnas.
+
+-   Existen varias formas de crear una tabla en R:
+
+    -   De manera manual (y quizá la más impráctica) usando la función `data.frame`:
+:::
+
+. . .
+
+```{r echo=T, eval = F}
+#| include: true
+#| code-line-numbers: "1|2|4"
+tabla <- data.frame(variable1 = c(1, 2, 3, 4, 5),
+                    variable2 = c("A", "B", "C", "D", "E"))
+
+tabla
+```
+
+## Tablas de datos {visibility="uncounted" auto-animate="true"}
+
+-   Son contenedores bidimensionales que nos permiten almacenar datos de distintos tipos en filas y columnas.
+
+-   Existen varias formas de crear una tabla en R:
+
+    -   De manera manual (y quizá la más impráctica) usando la función `data.frame`:
+
+```{r echo=T}
+#| include: true
+#| code-line-numbers: "4"
+tabla <- data.frame(variable1 = c(1, 2, 3, 4, 5),
+                    variable2 = c("A", "B", "C", "D", "E"))
+
+tabla
+```
+
+## Tablas de datos {visibility="uncounted"}
+
+::: incremental
+-   Las otras formas para crear tablas de datos incluyen:
+
+    -   Invocar tablas de paquetes de R (más para fines didácticos, ya sea que queramos probar un paquete de R, o como en este curso, para la enseñanza).
+
+    -   Importar tablas de datos de archivos de texto (.txt), documentos separados por comas (.csv) o archivos de Excel (.xlsx).
+
+    -   Esta última, sin lugar a dudas la manera más práctica para los fines de analizar nuestros datos.
+
+    -   Sin embargo, ya veremos todo ello en su debido momento.
+:::
+
+## Matrices
+
+::: incremental
+-   Al igual que las tablas de datos, las matrices nos permiten almacenar datos en filas y columnas.
+
+-   Sin embargo, una matriz puede contener elementos de un **solo** tipo.
+:::
+
+. . .
+
+```{r echo=T, eval = F}
+#| include: true
+#| code-line-numbers: "1|3"
+matriz <- matrix(data = c(1, 2, 3, 4, 5, 6, 7, 8, 9), ncol = 3)
+
+matriz
+```
+
+## Matrices {visibility="uncounted" auto-animate="true"}
+
+-   Al igual que las tablas de datos, las matrices nos permiten almacenar datos en filas y columnas.
+
+-   Sin embargo, una matriz puede contener elementos de un **solo** tipo.
+
+```{r echo=T}
+matriz <- matrix(data = c(1, 2, 3, 4, 5, 6, 7, 8, 9), ncol = 3)
+
+matriz
+```
+
+## Matrices {visibility="uncounted"}
+
+::: incremental
+-   Pero entonces, ¿por qué molestarnos con matrices?
+
+    -   Para un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para ploteo `lattice`).
+
+    -   Para un usuario avanzado, la mayor ventaja de tener los datos en forma matricial es que iterar y realizar computaciones sobre estas es más rápido (técnica común en lo que se conoce como ***low-level programming***). Esto, en modelos que requieren bastas cantidades de datos (por ejemplo, ***data mining*** o ***natural language processing***) conlleva a una mayor eficiencia en obtener resultados en tareas de identificación de patrones.
+:::
+
+## Listas
+
+. . .
+
+-   Arreglo multidimensional de elementos no necesariamente del mismo tipo ni de la misma longitud.
+
+. . .
+
+```{r echo=T}
+lista <- list(escalar_1, vector_1, tabla, matriz)
+```
+
+## Listas {visibility="uncounted" auto-animate="true"}
+
+-   Arreglo multidimensional de elementos no necesariamente del mismo tipo ni de la misma longitud.
+
+```{r echo=T}
+lista <- list(escalar_1, vector_1, tabla, matriz)
+
+lista
+```
+
+## Antes de continuar...
+
+::: incremental
+-   ¿Cómo sabemos que tipo de datos tenemos en un vector (u otro objeto) si asignamos escalares de distintos tipos?
+:::
+
+. . .
+
+```{r echo=T}
+str(vector_4)
+str(lista)
+str(matriz)
+```
+
+## Paquetes y librerías en R
+
+::: incremental
+-   Quizá hayan escuchado el uso de estos términos como sinónimos. Siendo más técnicos:
+
+    -   **Paquete** es una colección de funciones de R, datos y código compilado.
+
+    -   **Librería** es el directorio donde un paquete de R ha sido instalado y guardado.
+
+-   Existen dos tipos de paquetes:
+
+    -   Paquetes de base (instalados como librerías estándar de R, ejemplos: `utils` y `base`)
+
+    -   Paquetes de terceras partes (o externos, todos aquellos disponibles en CRAN)
+:::
+
+## Instalación de paquetes en R
+
+::: incremental
+-   Existen dos formas de instalar paquetes en R
+
+    1.  Mediante GUI de RStudio
+
+    2.  Mediante el editor o la consola, ventanas 1 y 3 de RStudio, respectivamente
+
+-   En este curso nos enfocaremos en hacer mínimo uso de la GUI. El motivo: mientras menos dependemos de la GUI, nuestros códigos (scripts) serán mas reproducibles e independientes de nuestra intervención cada vez que sean ejecutados.
+:::
+
+## Instalación paquetes en R {visibility="uncounted"}
+
+::: incremental
+-   El comando base de R para instalar paquetes es `install.packages`
+
+-   Puede instalar un paquete a la vez:
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+install.packages("tidyverse")
+```
+
+::: incremental
+-   O más de una paquete a la vez:
+:::
+
+. . .
+
+```{r echo=T, eval=F}
+install.packages(c("palmerpenguins", "tidycomm","fdth", "flextable", "modeest"))
+```
+
+. . .
+
+-   Para llamar (cargar) una librería en R se usa el comando base `library`
+
+. . .
+
+```{r echo=T, eval=F}
+library(ggplot2)
+```
+
+## Ayuda en R
+
+::: incremental
+-   El comando (o función) de ayuda en R es `?`.
+
+-   Se usa `?` antecediendo al nombre de la función de la que deseemos saber más información. Ejemplo:
+:::
+
+. . .
+
+```{r echo=T, eval=F, error=T}
+?print
+```
+
+. . .
+
+![](images/help.png){fig-align="center" width="611"}
+
+## Ayuda en R {.smaller visibility="uncounted"}
+
+. . .
+
+-   Otra función de ayuda es `help`
+
+. . .
+
+```{r echo=T, eval=F, error=T}
+help(package = "ggplot2")
+```
+
+. . .
+
+![](images/help1.png){fig-align="center" width="611"}
+
+## Ayuda en R {.smaller visibility="uncounted"}
+
+::: incremental
+-   Muy a menudo, nuestras dudas van más allá de lo que las funciones de ayuda de R nos puedan enseñar.
+
+-   Afortunadamente, R cuenta con una comunidad basta de usuarios dispuestos a solventar nuestras preguntas en redes sociales como X (conocida anteriormente como Twitter), Reddit e incluso FaceBook.
+
+-   Sin embargo, el mejor foro de ayuda es [StackOverflow](https://stackoverflow.com/){target="_blank"}
+
+    -   Comunidad de programadores (no únicamente de R) desde *beginners* hasta expertos en sus campos.
+
+    -   Una posible limitante: la mejor ayuda se encuentra en Inglés
+
+-   Otros recursos de aprendizaje y ayuda de R:
+
+    -   [Learning Statistics with R](https://learningstatisticswithr.com/){target="_blank"}
+
+    -   [towards data science](https://towardsdatascience.com/){target="_blank"}
+
+    -   [STHDA](http://www.sthda.com/english/){target="_blank"}
+
+    -   Google
+:::
+
+## Autoevaluación \# 1 {.smaller}
+
++--------------------------------------------------------------------------------+-------------+
+| 1.  Los creadores de R, fueron Gentleman e Ihaka de la universidad de Auckland | V / F       |
++--------------------------------------------------------------------------------+-------------+
+| 2.  `5 * 5 * 5` es equivalente a `5 ^ 3`                                       | V / F       |
++--------------------------------------------------------------------------------+-------------+
+| 3.  Una lista es un arreglo que admite datos de una sola clase únicamente      | V / F       |
++--------------------------------------------------------------------------------+-------------+
+| 4.  Queremos comparar si `x` es igual a `5`, es esto correcto:`x = 5`          | V / F       |
++--------------------------------------------------------------------------------+-------------+
+| 5.  La función `data.frame` nos permite crear manualmente tablas de datos      | V / F       |
++--------------------------------------------------------------------------------+-------------+
+
+## Autoevaluación \# 1 {visibility="uncounted" .smaller}
+
++----------------------------------------------------------------------------------+-------------+
+| 6.  Al crear un objeto de esta forma: `1_cuenta = 12` R lo crea sin error alguno | V / F       |
++----------------------------------------------------------------------------------+-------------+
+| 7.  Si dejo un espacio en el nombre de un objeto, R me devuelve un error         | V / F       |
++----------------------------------------------------------------------------------+-------------+
+| 8.  El comando `install.libraries` me permite instalar librerías                 | V / F       |
++----------------------------------------------------------------------------------+-------------+
+| 9.  En la expresión genérica `mean(x, . . .)` los puntos representan argumentos  | V / F       |
++----------------------------------------------------------------------------------+-------------+
+| 10. Es la siguiente expresión correcta: `z -> c(1, 2, 3)`                        | V / F       |
++----------------------------------------------------------------------------------+-------------+
+
+## Autoevaluación \# 1 {visibility="uncounted" .smaller}
+
+En tu computador, ejecuta en el prompt la siguiente línea de código:
+
+`?sd`.
+
++---------------------------------------------------------------------------------+-------------+
+| 11. `x` es un argumento de la función                                           | V / F       |
++---------------------------------------------------------------------------------+-------------+
+| 12. `na.rm` es otro argumento de la función                                     | V / F       |
++---------------------------------------------------------------------------------+-------------+
+| 13. `na.rm` le dice a la función `sd` que **NO** remueva observaciones perdidas | V / F       |
++---------------------------------------------------------------------------------+-------------+
+| 14. `sd` es la función de la librería `base` que calcula la desviación estándar | V / F       |
++---------------------------------------------------------------------------------+-------------+
+
+# Operaciones básicas en R
+
+## Introducción
+
+::: incremental
+-   El uso de los operandos básicos puede aplicarse sobre distintos tipos de objetos en R.
+
+-   Nos saltaremos las operaciones sobre escalares, ya que estas resemblan el uso de una calculadora común.
+
+-   En su lugar, nos concentraremos en operaciones sobre vectores, tablas de datos y listas, que en términos programáticos son más útiles.
+
+-   Debemos entonces comprender que una operación (o función de manera más general) se aplicará sobre todos los elementos de un objeto, a menos que especifiquemos lo contrario.
+:::
+
+## Operaciones aritméticas {.smaller}
+
+::: incremental
+-   Podemos llevar a cabo las cinco operaciones básicas sobre la totalidad de elementos numéricos de un objeto sin mayor inconveniente. Ejemplo:
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+a <- c(10, 20, -50, -10, 0)
+a / 100
+a * 10
+a + 30
+a - 30
+a ^ 2
+```
+
+## Operaciones lógicas {.smaller}
+
+::: incremental
+-   De manera similar, los operadores lógicos también actúan sobre cada elemento de un objeto
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+a <- c(10, 20, -50, -10, 0)
+a > 0
+a >= 0
+a == 0
+a != 0
+a < 0
+a <= 0
+```
+
+## Concatenación de vectores
+
+::: incremental
+-   Podemos también concatenar uno o más objetos a un vector pre-existente. Esto es útil en el momento de crear nuestras propias funciones. Sin adentrarnos en mayor detalle aún, veamos el siguiente ejemplo por demás simplificado
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+b <- c(a, 2)
+b
+c <- c(3, 5)
+d <- c(a, b, c)
+d
+```
+
+## Creación de factores
+
+::: incremental
+-   Es muy importante el especificar cuando una variable es un factor.
+
+-   Cómo mencioné anteriormente, R reconocerá de manera automática como caracter cualquier valor que no sea numérico.
+
+-   En caso de usar como un factor una variable que R reconoce como caracter únicamente, R realizará todo análisis que le pidamos utilizando el orden alfabético de la variable como el orden de los niveles del factor. Esto puede ser problemático si:
+
+    -   Queremos que los niveles del factor tengan un orden específico.
+
+    -   Si las pruebas estadísticas que realicemos requieren especificar un nivel como referencia.
+:::
+
+## Creación de factores {visibility="uncounted"}
+
+**Factor ordenado alfabéticamente**
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2|3"
+variable_factor_1 <- c("A", "A", "B", "C", "C", "C")
+variable_factor_1 <- factor(variable_factor_1)
+str(variable_factor_1)
+```
+
+. . .
+
+**Factor con orden distinto al alfabético**
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2|3"
+variable_factor_2 <- c("Tr.A", "Tr.A", "Tr.B", "Control", "Control", "Control")
+variable_factor_2 <- factor(variable_factor_2, levels = c("Control", "Tr.A", "Tr.B"))
+str(variable_factor_2)
+```
+
+## Transformación de valores {.smaller}
+
+::: incremental
+-   Las transformaciones más comunes de valores son a valores numéricos, caracteres y fechas.
+
+-   Para esto, haremos uso de las funciones `as.numeric`, `as.character` y `as.Date` respectivamente.
+:::
+
+. . .
+
+**Ejemplo** `as.numeric`. A veces, en la importación de datos, R asume como caracteres a valores numéricos (una causa común es el de designar en el archivo de origen a los valores perdidos con caracteres)
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2"
+trans_num <- c(1, 2, "NA", 3, 4)
+str(trans_num)
+```
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2"
+trans_num <- as.numeric(trans_num)
+str(trans_num)
+```
+
+. . .
+
+**Ejemplo** `as.character`.
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2|3"
+str(variable_factor_2)
+variable_factor_2 <- as.character(variable_factor_2)
+str(variable_factor_2)
+```
+
+## Transformación de valores {.smaller visibility="uncounted"}
+
+**Fechas**
+
+::: incremental
+-   La transformación de caracteres a fechas depende enormemente de los distintos formatos que existen para denotar una y de las unidades que se usan.
+
+-   Por tanto, no existe una solución única. Aquí abarcaremos el caso más sencillo en que el formato es YYYY-MM-DD.
+
+-   La función base `as.Date` abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete `lubridate` del conjunto de paquetes `tidyverse`.
+:::
+
+. . .
+
+**Ejemplo** `as.Date`
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2|3|4"
+fechas <- c("1985-10-14", "2021-12-25", "2023-01-01", "1999-05-06", "1900-01-02")
+str(fechas)
+fechas <- as.Date(fechas)
+str(fechas)
+```
+
+## Accediendo elementos específicos de objetos
+
+::: incremental
+-   Acceder a elementos específicos de objetos es una tarea frecuente.
+
+-   Sobre todo en casos como:
+
+    -   Iterando sobre un objeto dentro de una función.
+
+    -   Extrayendo valores específicos de un output de R (por ejemplo, si por algún motivo queremos trabajar únicamente con el valor p de una serie de regresiones lineales)
+
+    -   Cambiando de manera manual desde R un dato que fue erróneamente ingresado en el archivo original de origen (.txt, .csv, .xlsx).
+
+    -   Automatizar nuestro código para tareas repetitivas (analizar varias tablas de datos con una estructura predeterminada y poco variable).
+:::
+
+## Accediendo elementos específicos de objetos {visibility="uncounted"}
+
+::: incremental
+-   El operador de acceso a elementos es `$`.
+
+-   `$` funciona únicamente con elementos que han sido nombrados dentro de un objeto (mayoritariamente tablas y listas, **NO** funciona con vectores).
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2|4"
+tabla <- data.frame(variable1 = c(1, 2, 3, 4, 5),
+                    variable2 = c("A", "B", "C", "D", "E"))
+
+tabla$variable1
+```
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2|4"
+ej_lista <- list(lista1 = c(1, 2, 3, 4, 5),
+                 lista2 = c("A", "B", "C", "D", "E"))
+
+ej_lista$lista1
+```
+
+## Indexación
+
+::: incremental
+-   Otra forma de acceder elementos específicos de un objeto, es mediante sus índices.
+
+-   Un elemento dentro de un objeto tiene tantos índices como dimensiones el objeto posea.
+
+-   La sintaxis básica para acceder elementos se basa en el uso de corchetes `[]`:
+
+    -   `[`\# del elemento`]` para vectores
+
+    -   `[`\# de la fila`,`\# de la columna`]` para tablas y matrices
+
+    -   `[[`\# del elemento`]]` para listas
+
+-   **Contrario a Python, en R la indexación comienza con 1 en lugar de 0**
+:::
+
+## Indexación {visibility="uncounted"}
+
+**Ejemplos**
+
+. . .
+
+¿Cuál es el segundo elemento en el siguiente vector?
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2"
+ej_vector <- c("lunes", "martes", "miercoles", "jueves", "viernes")
+ej_vector[2]
+```
+
+. . .
+
+¿Cuál es el valor en la columna 1, fila 3 de la tabla de datos `tabla`?
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1"
+tabla[3, 1]
+```
+
+. . .
+
+¿Cuál es el segundo elemento del objeto `ej_lista`?
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+#| code-line-numbers: "1|2"
+ej_lista$lista2
+ej_lista[[2]]
+```
+
+## Autoevaluación \# 2 {.smaller .scrollable}
+
+Dado el siguiente objeto:
+
+```{r echo=T, eval=T, error=T}
+ev_1 <- list(tabla_de_datos = data.frame(columna_1 = c(0.2, 2.5, 3.14, 4.15, 5.55),
+                                         columna_2 = c("A", "B", "C", "D", "E"),
+                                         columna_3 = c("1985-10-14", "2021-12-25", "2023-01-01", "1999-05-06", "1900-01-02")),
+             vector_ejemplo = c("F", "T", "F", "T","F"),
+             escalar_ejemplo = 100)
+```
+
+1)  Es el elemento `vector_ejemplo` conformado por valores: Lógicos/caracteres
+
+2)  Para acceder a la **tercera fila** de la **primera columna** del elemento `tabla_de_datos`, ¿Cuál(es) de las siguientes líneas de código es(son) la(s) correcta(s)?
+
+```{r echo=T, eval=F, error=T}
+ev_1$tabla_de_datos[[1]]
+ev_1$tabla_de_datos[1, 3]
+ev_1[[1]][3, 1]
+ev_1$tabla_de_datos$columna_2[3]
+ev_1[[2]][3, 1]
+ev_1$tabla_de_datos$columna_1[3]
+```
+
+3)  Deseo concatenar los elementos `escalar_ejemplo` con `vector_ejemplo` (en ese orden) en un elemento adicional del objeto `ev_1` de nombre `conc_ejemplo`, ¿Cuál de las siguientes líneas de código es la correcta?
+
+```{r echo=T, eval=F, error=T}
+ev_1[[4]] <- ev_1[[2]] + ev_1[[3]]
+ev_1$conc_ejemplo <- c(ev_1[[3]],ev_1[[2]])
+ev_1$conc_ejemplo <- c(ev_1$vector_escalar + ev_1$ejemplo_escalar)
+```
+
+4)  Deseo reemplazar el cuarto elemento de `columna_2` en la `tabla_de_datos` por la letra `"E"`, ¿Cuál sería una solución?
+
+5)  Supongamos que para un determinado análisis con `tabla_de_datos`, la `columna_2` corresponde a mi factor. En este factor mi nivel de referencia es "E". ¿Cómo especifico en R que este sea el caso?
+
+6)  La variable `columna_3` de `tabla_de_datos` denota fechas, ¿Cómo darías el formato adecuado para que R la interprete como tal?
+
+# Operaciones estadísticas básicas en R
+
+## Introducción
+
+::: incremental
+-   Para ilustrar esta sección, usaremos la tabla de datos de R `mtcars`.
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+mtcars
+```
+
+
+
+## Parámetros poblacionales: Media aritmética
+
++----------------+-------------------------------------------------+-------------------------------+
+| Símbolo        | ¿Qué es?                                        | ¿Sabemos qué es?              |
++================+=================================================+===============================+
+| $\overline{X}$ | Media aritmética de la muestra                  | Calculada de los datos        |
++----------------+-------------------------------------------------+-------------------------------+
+| $\mu$          | Verdadera media aritmética de la población      | Casi nunca es conocida        |
++----------------+-------------------------------------------------+-------------------------------+
+| $\hat{\mu}$    | Estimado de la media aritmética de la población | Sí, identica a $\overline{X}$ |
++----------------+-------------------------------------------------+-------------------------------+
+
+$$
+\overline{X} = \frac{1}{n}\sum^{n}_{i=1}\left(X_i\right)
+$$
+
+## Parámetros poblacionales: Desviación estándar
+
++----------------+---------------------------------------------------+----------------------------+
+| Símbolo        | ¿Qué es?                                          | ¿Sabemos qué es?           |
++================+===================================================+============================+
+| $s$            | Desviación estándar de la muestra                 | Calculada de los datos     |
++----------------+---------------------------------------------------+----------------------------+
+| $\sigma$       | Verdadera desviación estándar de la población     | Casi nunca es conocida     |
++----------------+---------------------------------------------------+----------------------------+
+| $\hat{\sigma}$ | Estimado de la deviación estándar de la población | Sí, pero no es igual a $s$ |
++----------------+---------------------------------------------------+----------------------------+
+
+::: columns
+::: {.column width="50%"}
+$$
+s = \sqrt{\frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2} 
+$$
+:::
+
+::: {.column width="50%"}
+$$
+\sigma = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2} 
+$$
+:::
+:::
+
+## Parámetros poblacionales: varianza
+
++------------------+-----------------------------------------+------------------------------+
+| Símbolo          | ¿Qué es?                                | ¿Sabemos qué es?             |
++==================+=========================================+==============================+
+| $s^2$            | Varianza de la muestra                  | Calculada de los datos       |
++------------------+-----------------------------------------+------------------------------+
+| $\sigma^2$       | Verdadera varianza de la población      | Casi nunca es conocida       |
++------------------+-----------------------------------------+------------------------------+
+| $\hat{\sigma}^2$ | Estimado de la varianza de la población | Sí, pero no es igual a $s^2$ |
++------------------+-----------------------------------------+------------------------------+
+
+::: columns
+::: {.column width="50%"}
+$$
+s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
+$$
+:::
+
+::: {.column width="50%"}
+$$
+\sigma^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2 
+$$
+:::
+:::
+
+## Parámetros poblacionales en R
+
+**Media aritmética**
+
+```{r echo=T, eval=T, error=T}
+mean(mtcars$mpg)
+```
+
+. . .
+
+**Desviación estándar**
+
+```{r echo=T, eval=T, error=T}
+sd(mtcars$mpg)
+```
+
+. . .
+
+**Varianza**
+
+```{r echo=T, eval=T, error=T}
+var(mtcars$mpg)
+```
+
+## Otras medidas {.smaller}
+
+. . .
+
+**Mediana**
+
+```{r echo=T, eval=T, error=T}
+median(mtcars$mpg)
+```
+
+. . .
+
+**Cuantiles (cuartiles)**
+
+```{r echo=T, eval=T, error=T}
+quantile(mtcars$mpg)
+```
+
+. . .
+
+**Moda**
+
+```{r echo=T, eval=T, error=T}
+library(modeest)
+mlv(mtcars$mpg, method = "hsm")
+```
+
+. . .
+
+**Coeficiente de variación**
+
+```{r echo=T, eval=T, error=T}
+sd(mtcars$mpg)/mean(mtcars$mpg)
+```
+
+## Autoevaluación \# 3 {.smaller}
+
++----------------------------------------------------------------------------------------+-------------+
+| 1.  El coeficiente de variación es adimensional                                        | V / F       |
++----------------------------------------------------------------------------------------+-------------+
+| 2.  La media poblacional se aproxima a la media muestral con una corrección            | V / F       |
++----------------------------------------------------------------------------------------+-------------+
+| 3.  La desv. est. muestral es un estimador de la poblacional después de una corrección | V / F       |
++----------------------------------------------------------------------------------------+-------------+
+| 4.  La moda es igual al valor medio de una distribución                                | V / F       |
++----------------------------------------------------------------------------------------+-------------+
+| 5.  El primer cuartil corresponde al 50% de probabilidad de una distribución           | V / F       |
++----------------------------------------------------------------------------------------+-------------+
+
+## Autoevaluación \# 3 {.scrollable visibility="uncounted" .smaller}
+
+Usando la variable `disp` de `mtcars`:
+
++--------------------------------------------------+---------------+
+| 6.  La media aritmética es igual a               | a\) 220.9     |
+|                                                  |               |
+|                                                  | b\) 139.0     |
+|                                                  |               |
+|                                                  | c\) 230.7     |
+|                                                  |               |
+|                                                  | d\) 401.2     |
++--------------------------------------------------+---------------+
+| 7.  La desviación estándar es igual a            | a\) 33.1      |
+|                                                  |               |
+|                                                  | b\) 123.9     |
+|                                                  |               |
+|                                                  | c\) 120.2     |
+|                                                  |               |
+|                                                  | d\) 210.7     |
++--------------------------------------------------+---------------+
+| 8.  La varianza es igual a                       | a\) 1095.6    |
+|                                                  |               |
+|                                                  | b\) 15360.8   |
+|                                                  |               |
+|                                                  | c\) 14448.0   |
+|                                                  |               |
+|                                                  | d\) 44394.5   |
++--------------------------------------------------+---------------+
+| 9.  El tercer cuartil es                         | a\) 71.1      |
+|                                                  |               |
+|                                                  | b\) 120.8     |
+|                                                  |               |
+|                                                  | c\) 196.3     |
+|                                                  |               |
+|                                                  | d\) 326.0     |
++--------------------------------------------------+---------------+
+| 10. El coeficiente de variación es               | a\) 0.45      |
+|                                                  |               |
+|                                                  | b\) 0.15      |
+|                                                  |               |
+|                                                  | c\) 0.54      |
+|                                                  |               |
+|                                                  | d\) 0.82      |
++--------------------------------------------------+---------------+
+
+## Estadísticos descriptivos y tablas de frecuencia
+
+::: columns
+::: {.column .fragment width="80%"}
+Para ilustrar esta sección, utilizaremos la base de datos de "Palmer penguins":
+
+-   Los datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería `palmerpenguins`.
+
+![](images/penguins.png){fig-align="center" width="400"}
+:::
+
+::: {.column width="20%"}
+::: {layout="[[-1], [1], [-1]]"}
+![](images/palmeer.png){fig-align="center"}
+:::
+:::
+:::
+
+## Estadísticos descriptivos
+
+::: incremental
+La forma mas sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base `summary`
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+library(palmerpenguins)
+summary(penguins)
+```
+
+## Estadísticos descriptivos {.scrollable visibility="uncounted"}
+
+::: incremental
+-   Usar la función `summary` resulta útil para hacer chequeos sobre la marcha.
+
+-   Para obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete `tidycomm`
+
+    -   `describe`: para generar tablas de estadísticos descriptivos de variables cuantitativas
+
+    -   `describe_cat`: para tablas de estadísticos descriptivos de variables categóricas
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+library(tidycomm)
+describe(penguins)
+```
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+library(tidycomm)
+describe_cat(penguins)
+```
+
+## Tablas de frecuencia
+
+::: incremental
+-   Existen dos formas de crear tablas de frecuencia:
+
+    -   A partir de variables categóricas
+
+    -   Categorizando una variable continua
+
+-   Usualmente se presentan:
+
+    -   Frecuencia absoluta: número de observaciones por categoría
+
+    -   Frecuencia acumulada: suma de frecuencias absolutas
+
+    -   Frecuencia relativa: frecuencia absoluta/total de observaciones
+
+    -   Frecuencia relativa acumulada: suma de frecuencias relativas
+:::
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+::: incremental
+-   A partir de una variable categórica
+:::
+
+. . .
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "1|2"
+library(fdth)                     # ftdh es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                  # attach es un comando que convierte las columnas en objetos
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   A partir de una variable categórica
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "3"
+library(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                # attach es un comando que convierte las columnas en objetos
+head(penguins)                  # le damos un vistazo a las variables (columnas)
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   A partir de una variable categórica
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "3"
+library(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                # attach es un comando que convierte las columnas en objetos
+tabla_frec1 <- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   A partir de una variable categórica
+
+```{r echo=T, eval=T}
+#| code-line-numbers: "4"
+library(fdth)                   # fdth es una librería que nos permite calcular tablas de frecuencia
+attach(penguins)                # attach es un comando que convierte las columnas en objetos
+tabla_frec1 <- fdt_cat(species) # fdt_cat es la función de ftdh que calcula la tabla de frecuencia
+tabla_frec1
+```
+
+. . .
+
+-   f: frecuencia absoluta
+
+-   rf: frecuencia relativa, rf(%): frecuencia relativa en %
+
+-   cf: frecuencia acumulada, cf(%): frecuencia acumulada en %
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+::: incremental
+-   Categorizando una variable continua
+:::
+
+. . .
+
+```{r echo=T, eval=T, error=T}
+#| code-line-numbers: "1"
+tabla_frec2 <- fdt(body_mass_g, na.rm = T)
+```
+
+## Tablas de frecuencia {visibility="uncounted" auto-animate="true"}
+
+-   Categorizando una variable continua
+
+```{r echo=T, eval=T, error=T}
+#| code-line-numbers: "2"
+tabla_frec2 <- fdt(body_mass_g, na.rm = T)
+tabla_frec2
+```
+
+::: incremental
+-   La librería `fdth` categoriza una variable continua en base a tres distintos algoritmos. El "default" es el algoritmo "Sturges" (ver `?fdth` para más información).
+:::
+
+## ¿Cómo exporto mis tablas?
+
+. . .
+
+-   Existen varias opciones para exportar tablas a otros formatos (.pdf, .docx, .html)
+
+. . .
+
+```{r echo=T, eval=F, error=T}
+#| code-line-numbers: "1|2|3|4|5|6"
+library(flextable)
+ft1 <- flextable(tabla_frec1)
+ft2 <- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista
+save_as_docx("Tabla_1" = ft1, "Tabla_2" = ft2, 
+             path = "C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx")
+detach(penguins) # IMPORTANTISIMO!
+```
+
+. . .
+
+![](images/tabla_word.png){fig-align="center"}
+
+## Autoevaluación \# 4 {.smaller}
+
+Carga los datos de base `iris` y aparea los siguientes literales
+
++-----------------------------------------------------+---------------+
+| a\) Media aritmética de `Sepal.Length`              | a\) 66.67%    |
+|                                                     |               |
+| b\) Número total de observaciones                   | b\) 150       |
+|                                                     |               |
+| c\) Desv. Est. de `Petal.Width`                     | c\) 0.33      |
+|                                                     |               |
+| d\) Valor mínimo de `Sepal.Width`                   | d\) 5.84      |
+|                                                     |               |
+| e\) Frecuencia relativa de la especie `setosa`      | e\) 2         |
+|                                                     |               |
+| f\) Frecuencia acumulada hasta especie `versicolor` | f\) 0.762     |
++-----------------------------------------------------+---------------+
+
+# Antes de terminar este módulo...
+
+## Funciones y librerías importantes de esta sesión {.smaller .scrollable}
+
+**Funciones**
+
+::: incremental
+-   `data.frame` nos permite crear una tabla de datos de manera manual.
+
+-   `str` nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R.
+
+-   `install.packages` nos permite instalar paquetes de CRAN en R.
+
+-   `library` nos permite invocar/llamar una librería de R.
+
+-   `?` y `help` son comandos de ayuda de R.
+
+-   `factor` nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles.
+
+-   `as.numeric`, `as.character` y `as.Date` transforman valores a numéricos, caracteres y fechas.
+
+-   Las funciones `mean`, `sd`, `var`, `median` y `quantile` calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente.
+
+-   `attach` convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad.
+
+-   `dettach` revierte a `attach`.
+:::
+
+. . .
+
+**Librerias**
+
+::: incremental
+-   `modeest` funciones para estimar la moda de una distribución.
+
+    -   `mlv` función para estimación de la moda de datos continuos.
+
+-   `palmerpenguins` datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida.
+
+-   `tidycomm` funciones para calcular estadísticos descriptivos.
+
+    -   `describe` crea una tabla de estadísticos descriptivos para variables continuas.
+
+    -   `describe_cat` crea una tabla de estadísticos descriptivos para variables categóricas.
+
+-   `fdth` funciones para crear tablas de frecuencias.
+
+    -   `fdt_cat` crea una tabla de frecuencia para variables categóricas.
+
+    -   `fdt` categoriza una variable continua para crear una tabla de frecuencias.
+
+-   `flextable` paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf)
+
+    -   `flextable` principal función para dar formato a una tabla
+:::
+
+<!-- ## Recomendaciones generales (i) {.smaller} -->
+
+<!-- ::: incremental -->
+
+<!-- -   ¿Recuerdan qué aconsejé no instalar las traducciones de los mensajes de R? -->
+
+<!--     -   Las traducciones de mensajes se aplican únicamente a librerías de base. -->
+
+<!--     -   No son de gran ayuda cuando queremos resolver errores en foros de ayuda. -->
+
+<!-- -   Es preferible no usar caractéres propios de nuestro idioma (como las tildes, diéresis o la ñ) -->
+
+<!--     -   Al menos en datos que vayamos a cargar en una sesión: la codificación del texto puede darle problemas a R en identificar columnas. -->
+
+<!--     -   Evita usarlos en el código propiamente dicho (asignación de objetos). Puede hacer más difícil encontrar errores, y puede dar problemas de compatibilidad en el futuro. -->
+
+<!-- ::: -->
+
+<!-- ## Buenas prácticas de programación {.smaller} -->
+
+<!-- ::: incremental -->
+
+<!-- -   Quizá hasta este momento hayas notado de manera inadvertida el uso de ciertas técnicas en los códigos que he compartido: -->
+
+<!--     -   Comentarios -->
+
+<!--     -   Espacios en blanco -->
+
+<!--     -   Indentaciones -->
+
+<!--     -   Nombres informativos -->
+
+<!-- -   Y otras que, dependiendo del programador y el propósito del script, mencionaré brevemente aquí -->
+
+<!--     -   Shortcuts útiles en RStudio -->
+
+<!--     -   Debugging básico -->
+
+<!--     -   Información de la sesión -->
+
+<!-- ::: -->
