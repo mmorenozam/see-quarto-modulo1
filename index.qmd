@@ -57,7 +57,7 @@ editor: visual
 ::: incremental
 -   Estructura del curso
 
-    -   4 sesiones de 5 horas cada una.  Días Sábados 16, 23 de Marzo, 6 y 13 de Abril
+    -   4 sesiones de 5 horas cada una. Días Sábados 16, 23 de Marzo, 6 y 13 de Abril
 
     -   8H30 a 13H30 (Dos recesos de 10 minutos cada uno)
 
