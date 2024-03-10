@@ -67,11 +67,7 @@ editor: visual
 
 -   Tarea final de curso:
 
-    -   40% entrega de autoevaluaciones resueltas (con código en caso de resolución de ejercicios).
-
-    -   60% reporte con aplicación de conocimientos adquiridos sobre una base de datos propia o propuesta durante el curso.
-
-    -   Mínima nota de aprobación: 70%
+    -  Ver el apartado ["Trabajo final"](https://mmorenozam.github.io/see-quarto-website/trabajo.html){target="_blank"} en la página web del curso.
 :::
 
 ## Generalidades {visibility="uncounted"}
