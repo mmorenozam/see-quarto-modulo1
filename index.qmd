@@ -24,6 +24,34 @@ editor: visual
 
 # ¡Conozcámonos!
 
+## ¿Cuál es tu perfil?
+
+Ingresa al menti [haciendo click aquí](https://www.menti.com/alfy9t1x6h6q){target="_blank"} o con el siguiente código QR.
+
+![](images/qr.png){fig-align="center"}
+
+## ¿Por qué R?
+
+Ingresa al segundo menti [haciendo click aquí](https://www.menti.com/aloungk5fw2k){target="_blank"} o con el siguiente código QR.
+
+![](images/qr2.png){fig-align="center"}
+
+
+
+## ¿A quién está dirigido este curso?
+
+::: incremental
+
+-   A toda persona con las ganas de aprender acerca de programación estadística.
+
+-   Para aprender R no es necesario ser Estadístico, Científico de Datos o Matemático puro.
+
+-   En mi caso, me formé como Biotecnólogo, con experiencia de pregrado en laboratorios de Química, Biología, Microbiología, Cultivo de Tejidos ...
+
+-   Sin embargo la vida en el laboratorio no era para mí, y al terminar mi formación como "ingeniero", me lancé de lleno a la Estadística.
+
+:::
+
 ## Acerca del curso {.smaller}
 
 ::: incremental
@@ -64,6 +92,8 @@ editor: visual
 -   Canales de comunicación:
 
     -   Email: **mmorenozambrano\@protonmail.com**
+    
+    -   Grupo de WhatsApp
 
 -   Tarea final de curso:
 
@@ -77,13 +107,13 @@ editor: visual
 
     -   Las tablas de datos que usaremos son de acceso abierto. En su mayoría, provenientes de paquetes o librerías de R.
 
-    -   Un listado comprensivo de los materiales por módulo se encuentra detallado en la página web del curso.
+    -   Materiales adicionales estarán disponibles en la página web del curso.
 
 -   Recursos complementarios:
 
     -   He creado el contenido del curso a partir de varios recursos libremente disponibles en el internet (mayoritariamente de fuentes en Inglés).
 
-    -   Al igual que los materiales, los recursos complementarios se encuentran detallados en la página web del curso.
+    -   Los recursos complementarios se encuentran detallados en la página web del curso.
 :::
 
 # Introducción a R
@@ -285,7 +315,7 @@ Moreno-Zambrano, *et al.* (2018) *No publicado*
 
     -   Plots: donde se producirán los plots que ejecutemos
 
-    -   Packages: listado de librerías instaladas
+    -   Packages: listado de paquetes instalados
 
     -   Help: ayuda de R (activada por comando o búsqueda manual)
 
@@ -350,7 +380,7 @@ y <- 0
 
 -   En el caso de que el nombre de la columna empiece con un número, R asigna caracteres para evitar errores. Ejemplo: si en un archivo de Excel tenemos por nombre de columna `1glucosa`, R lo importa como `X.1glucosa`
 
--   El nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como `_` o `-` cuando deseemos contar con espacios en nuestros archivos a importar.
+-   El nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como `_` ó `-` cuando deseemos contar con espacios en nuestros archivos a importar.
 
 -   Dentro del ambiente de R, es aconsejable evitar espacios vacíos (se los puede usar, pero igualmente, se requiere de sintaxis especial para referirnos a esos objetos).
 :::
@@ -377,7 +407,7 @@ una variable <- 2
 
     -   Numéricos, tanto enteros como reales (`num`: `1`, `3.14`)
 
-    -   Caractéres (`chr`: `"a"`, `"estadistica"`)
+    -   Caracteres (`chr`: `"a"`, `"estadistica"`)
 
     -   Factores (`Factor`: pueden ser letras o números)
 
@@ -396,7 +426,7 @@ una variable <- 2
 | División       |   `/`    | `12 / 3` |    `4`    |
 | Potencia       |   `^`    | `5 ^ 2`  |   `25`    |
 
--   Existen otros operadores, como el de "cascada" (*pipeline operator*) `%>%`, que usaremos más adelante
+-   Existen otros operadores, como el de "cascada" o *pipeline operator* (en tidyverse: `%>%`, en R base: `|>`), que usaremos más adelante
 
 ## Operadores Booleanos de comparación
 
@@ -482,7 +512,7 @@ vector_4 <- c(1, "dos", 3)
 
 . . .
 
--   ¿Qué pasa con el `vector_4`?: cuando escalares de distinto tipo son asignados como elementos de un vector, R transforma todos los elementos a un mismo tipo.
+-   ¿Qué pasa con el `vector_4`?: cuando escalares de distinto tipo son asignados como elementos de un vector, R transforma todos los elementos a un solo tipo (por lo general caracter).
 
 ## Tablas de datos
 
@@ -732,7 +762,7 @@ help(package = "ggplot2")
     -   Google
 :::
 
-## Autoevaluación \# 1 {.smaller}
+## Autoevaluación {.smaller}
 
 +--------------------------------------------------------------------------------+-------------+
 | 1.  Los creadores de R, fueron Gentleman e Ihaka de la universidad de Auckland | V / F       |
@@ -746,7 +776,7 @@ help(package = "ggplot2")
 | 5.  La función `data.frame` nos permite crear manualmente tablas de datos      | V / F       |
 +--------------------------------------------------------------------------------+-------------+
 
-## Autoevaluación \# 1 {visibility="uncounted" .smaller}
+## Autoevaluación {visibility="uncounted" .smaller}
 
 +----------------------------------------------------------------------------------+-------------+
 | 6.  Al crear un objeto de esta forma: `1_cuenta = 12` R lo crea sin error alguno | V / F       |
@@ -760,7 +790,7 @@ help(package = "ggplot2")
 | 10. Es la siguiente expresión correcta: `z -> c(1, 2, 3)`                        | V / F       |
 +----------------------------------------------------------------------------------+-------------+
 
-## Autoevaluación \# 1 {visibility="uncounted" .smaller}
+## Autoevaluación {visibility="uncounted" .smaller}
 
 En tu computador, ejecuta en el prompt la siguiente línea de código:
 
@@ -1052,7 +1082,7 @@ ej_lista$lista2
 ej_lista[[2]]
 ```
 
-## Autoevaluación \# 2 {.smaller .scrollable}
+## Autoevaluación {.smaller .scrollable}
 
 Dado el siguiente objeto:
 
@@ -1234,7 +1264,7 @@ mlv(mtcars$mpg, method = "hsm")
 sd(mtcars$mpg)/mean(mtcars$mpg)
 ```
 
-## Autoevaluación \# 3 {.smaller}
+## Autoevaluación {.smaller}
 
 +----------------------------------------------------------------------------------------+-------------+
 | 1.  El coeficiente de variación es adimensional                                        | V / F       |
@@ -1248,7 +1278,7 @@ sd(mtcars$mpg)/mean(mtcars$mpg)
 | 5.  El primer cuartil corresponde al 50% de probabilidad de una distribución           | V / F       |
 +----------------------------------------------------------------------------------------+-------------+
 
-## Autoevaluación \# 3 {.scrollable visibility="uncounted" .smaller}
+## Autoevaluación {.scrollable visibility="uncounted" .smaller}
 
 Usando la variable `disp` de `mtcars`:
 
@@ -1315,7 +1345,7 @@ Para ilustrar esta sección, utilizaremos la base de datos de "Palmer penguins":
 ## Estadísticos descriptivos
 
 ::: incremental
-La forma mas sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base `summary`
+La forma más sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base `summary`
 :::
 
 . . .
@@ -1476,7 +1506,7 @@ detach(penguins) # IMPORTANTISIMO!
 
 ![](images/tabla_word.png){fig-align="center"}
 
-## Autoevaluación \# 4 {.smaller}
+## Autoevaluación {.smaller}
 
 Carga los datos de base `iris` y aparea los siguientes literales
 

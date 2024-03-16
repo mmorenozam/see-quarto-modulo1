@@ -409,6 +409,27 @@ Mauricio Moreno, PhD
 <h1>¡Conozcámonos!</h1>
 
 </section>
+<section id="cuál-es-tu-perfil" class="slide level2">
+<h2>¿Cuál es tu perfil?</h2>
+<p>Ingresa al menti <a href="https://www.menti.com/alfy9t1x6h6q" target="_blank">haciendo click aquí</a> o con el siguiente código QR.</p>
+
+<img data-src="images/qr.png" class="r-stretch quarto-figure-center"></section>
+<section id="por-qué-r" class="slide level2">
+<h2>¿Por qué R?</h2>
+<p>Ingresa al segundo menti <a href="https://www.menti.com/aloungk5fw2k" target="_blank">haciendo click aquí</a> o con el siguiente código QR.</p>
+
+<img data-src="images/qr2.png" class="r-stretch quarto-figure-center"></section>
+<section id="a-quién-está-dirigido-este-curso" class="slide level2">
+<h2>¿A quién está dirigido este curso?</h2>
+<div>
+<ul>
+<li class="fragment"><p>A toda persona con las ganas de aprender acerca de programación estadística.</p></li>
+<li class="fragment"><p>Para aprender R no es necesario ser Estadístico, Científico de Datos o Matemático puro.</p></li>
+<li class="fragment"><p>En mi caso, me formé como Biotecnólogo, con experiencia de pregrado en laboratorios de Química, Biología, Microbiología, Cultivo de Tejidos …</p></li>
+<li class="fragment"><p>Sin embargo la vida en el laboratorio no era para mí, y al terminar mi formación como “ingeniero”, me lancé de lleno a la Estadística.</p></li>
+</ul>
+</div>
+</section>
 <section id="acerca-del-curso" class="slide level2 smaller">
 <h2>Acerca del curso</h2>
 <div>
@@ -443,7 +464,8 @@ Mauricio Moreno, PhD
 </ul></li>
 <li class="fragment"><p>Canales de comunicación:</p>
 <ul>
-<li class="fragment">Email: <strong>mmorenozambrano@protonmail.com</strong></li>
+<li class="fragment"><p>Email: <strong>mmorenozambrano@protonmail.com</strong></p></li>
+<li class="fragment"><p>Grupo de WhatsApp</p></li>
 </ul></li>
 <li class="fragment"><p>Tarea final de curso:</p>
 <ul>
@@ -459,12 +481,12 @@ Mauricio Moreno, PhD
 <li class="fragment"><p>Materiales:</p>
 <ul>
 <li class="fragment"><p>Las tablas de datos que usaremos son de acceso abierto. En su mayoría, provenientes de paquetes o librerías de R.</p></li>
-<li class="fragment"><p>Un listado comprensivo de los materiales por módulo se encuentra detallado en la página web del curso.</p></li>
+<li class="fragment"><p>Materiales adicionales estarán disponibles en la página web del curso.</p></li>
 </ul></li>
 <li class="fragment"><p>Recursos complementarios:</p>
 <ul>
 <li class="fragment"><p>He creado el contenido del curso a partir de varios recursos libremente disponibles en el internet (mayoritariamente de fuentes en Inglés).</p></li>
-<li class="fragment"><p>Al igual que los materiales, los recursos complementarios se encuentran detallados en la página web del curso.</p></li>
+<li class="fragment"><p>Los recursos complementarios se encuentran detallados en la página web del curso.</p></li>
 </ul></li>
 </ul>
 </div>
@@ -508,7 +530,7 @@ Mauricio Moreno, PhD
 </div>
 </div>
 </section>
-<section id="por-qué-r" class="slide level2 smaller">
+<section id="por-qué-r-1" class="slide level2 smaller">
 <h2>¿Por qué R?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -683,7 +705,7 @@ Mauricio Moreno, PhD
 <li><p>Varias pestañas de importancia:</p>
 <ul>
 <li><p>Plots: donde se producirán los plots que ejecutemos</p></li>
-<li><p>Packages: listado de librerías instaladas</p></li>
+<li><p>Packages: listado de paquetes instalados</p></li>
 <li><p>Help: ayuda de R (activada por comando o búsqueda manual)</p></li>
 <li><p>Viewer: crea una ventana fuera del ambiente de RStudio para visualizar gráficos</p></li>
 </ul></li>
@@ -747,7 +769,7 @@ Mauricio Moreno, PhD
 <ul>
 <li class="fragment"><p>Al importar tablas, R asigna el valor de la primera fila de cada columna como su nombre.</p></li>
 <li class="fragment"><p>En el caso de que el nombre de la columna empiece con un número, R asigna caracteres para evitar errores. Ejemplo: si en un archivo de Excel tenemos por nombre de columna <code>1glucosa</code>, R lo importa como <code>X.1glucosa</code></p></li>
-<li class="fragment"><p>El nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como <code>_</code> o <code>-</code> cuando deseemos contar con espacios en nuestros archivos a importar.</p></li>
+<li class="fragment"><p>El nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como <code>_</code> ó <code>-</code> cuando deseemos contar con espacios en nuestros archivos a importar.</p></li>
 <li class="fragment"><p>Dentro del ambiente de R, es aconsejable evitar espacios vacíos (se los puede usar, pero igualmente, se requiere de sintaxis especial para referirnos a esos objetos).</p></li>
 </ul>
 </div>
@@ -775,7 +797,7 @@ Mauricio Moreno, PhD
 <li class="fragment"><p>Los tipos de datos que R es capaz de manejar son diversos. Los más comunes son:</p>
 <ul>
 <li class="fragment"><p>Numéricos, tanto enteros como reales (<code>num</code>: <code>1</code>, <code>3.14</code>)</p></li>
-<li class="fragment"><p>Caractéres (<code>chr</code>: <code>"a"</code>, <code>"estadistica"</code>)</p></li>
+<li class="fragment"><p>Caracteres (<code>chr</code>: <code>"a"</code>, <code>"estadistica"</code>)</p></li>
 <li class="fragment"><p>Factores (<code>Factor</code>: pueden ser letras o números)</p></li>
 <li class="fragment"><p>Lógicos (<code>logi</code>: <code>True</code>, <code>False</code> o también <code>T</code> y <code>F</code>)</p></li>
 <li class="fragment"><p>Fechas (<code>Date</code>: <code>"1985-10-14"</code>)</p></li>
@@ -828,7 +850,7 @@ Mauricio Moreno, PhD
 </tbody>
 </table>
 <ul>
-<li>Existen otros operadores, como el de “cascada” (<em>pipeline operator</em>) <code>%&gt;%</code>, que usaremos más adelante</li>
+<li>Existen otros operadores, como el de “cascada” o <em>pipeline operator</em> (en tidyverse: <code>%&gt;%</code>, en R base: <code>|&gt;</code>), que usaremos más adelante</li>
 </ul>
 </section>
 <section id="operadores-booleanos-de-comparación" class="slide level2">
@@ -973,7 +995,7 @@ Mauricio Moreno, PhD
 </div>
 <div class="fragment">
 <ul>
-<li>¿Qué pasa con el <code>vector_4</code>?: cuando escalares de distinto tipo son asignados como elementos de un vector, R transforma todos los elementos a un mismo tipo.</li>
+<li>¿Qué pasa con el <code>vector_4</code>?: cuando escalares de distinto tipo son asignados como elementos de un vector, R transforma todos los elementos a un solo tipo (por lo general caracter).</li>
 </ul>
 </div>
 </section>
@@ -1282,8 +1304,8 @@ Mauricio Moreno, PhD
 </ul>
 </div>
 </section>
-<section id="autoevaluación-1" class="slide level2 smaller">
-<h2>Autoevaluación # 1</h2>
+<section id="autoevaluación" class="slide level2 smaller">
+<h2>Autoevaluación</h2>
 <table>
 <colgroup>
 <col style="width: 85%">
@@ -1323,8 +1345,8 @@ Mauricio Moreno, PhD
 </tbody>
 </table>
 </section>
-<section id="autoevaluación-1-1" class="slide level2 smaller" data-visibility="uncounted">
-<h2>Autoevaluación # 1</h2>
+<section id="autoevaluación-1" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Autoevaluación</h2>
 <table>
 <colgroup>
 <col style="width: 85%">
@@ -1364,8 +1386,8 @@ Mauricio Moreno, PhD
 </tbody>
 </table>
 </section>
-<section id="autoevaluación-1-2" class="slide level2 smaller" data-visibility="uncounted">
-<h2>Autoevaluación # 1</h2>
+<section id="autoevaluación-2" class="slide level2 smaller" data-visibility="uncounted">
+<h2>Autoevaluación</h2>
 <p>En tu computador, ejecuta en el prompt la siguiente línea de código:</p>
 <p><code>?sd</code>.</p>
 <table>
@@ -1721,8 +1743,8 @@ Mauricio Moreno, PhD
 </div>
 </div>
 </section>
-<section id="autoevaluación-2" class="slide level2 smaller scrollable">
-<h2>Autoevaluación # 2</h2>
+<section id="autoevaluación-3" class="slide level2 smaller scrollable">
+<h2>Autoevaluación</h2>
 <p>Dado el siguiente objeto:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb82"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1"></a>ev_1 <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">tabla_de_datos =</span> <span class="fu">data.frame</span>(<span class="at">columna_1 =</span> <span class="fu">c</span>(<span class="fl">0.2</span>, <span class="fl">2.5</span>, <span class="fl">3.14</span>, <span class="fl">4.15</span>, <span class="fl">5.55</span>),</span>
@@ -2006,8 +2028,8 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 </div>
 </div>
 </section>
-<section id="autoevaluación-3" class="slide level2 smaller">
-<h2>Autoevaluación # 3</h2>
+<section id="autoevaluación-4" class="slide level2 smaller">
+<h2>Autoevaluación</h2>
 <table>
 <colgroup>
 <col style="width: 86%">
@@ -2047,8 +2069,8 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 </tbody>
 </table>
 </section>
-<section id="autoevaluación-3-1" class="slide level2 scrollable smaller" data-visibility="uncounted">
-<h2>Autoevaluación # 3</h2>
+<section id="autoevaluación-5" class="slide level2 scrollable smaller" data-visibility="uncounted">
+<h2>Autoevaluación</h2>
 <p>Usando la variable <code>disp</code> de <code>mtcars</code>:</p>
 <table style="width:93%;">
 <colgroup>
@@ -2140,7 +2162,7 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <section id="estadísticos-descriptivos" class="slide level2">
 <h2>Estadísticos descriptivos</h2>
 <div>
-<p>La forma mas sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base <code>summary</code></p>
+<p>La forma más sencilla de calcular los estadísticos descriptivos de una tabla de datos es usando la función base <code>summary</code></p>
 </div>
 <div class="fragment">
 <div class="cell">
@@ -2370,8 +2392,8 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 </div>
 </div>
 </section>
-<section id="autoevaluación-4" class="slide level2 smaller">
-<h2>Autoevaluación # 4</h2>
+<section id="autoevaluación-6" class="slide level2 smaller">
+<h2>Autoevaluación</h2>
 <p>Carga los datos de base <code>iris</code> y aparea los siguientes literales</p>
 <table style="width:97%;">
 <colgroup>
